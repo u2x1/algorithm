@@ -1,8 +1,3 @@
-#!/bin/sh
-set -e
-
-if [ ! -f "$1.cpp" ]; then
-cat > $1.cpp <<EOF
 #ifdef BENCHMARK    ////
 #include <ctime>    ////
 #endif              ////
@@ -10,13 +5,27 @@ cat > $1.cpp <<EOF
 #include <cstdio>
 
 int main() {
-  scanf("%
+  int h, k = 0;
+  int hLeft[1001];
+  while(scanf("%d", &h) == 1) {
+    int smallestH = 999999, pos;
+    for(int i = 0; i < k; ++i) {
+      if (hLeft[i] >= h && hLeft[i] < smallestH) {
+          smallestH = hLeft[i]; pos = i;
+      }
+    }
+    if (smallestH == 999999) {
+      hLeft[k++] = h;
+    } else {
+      hLeft[pos] = h;
+    }
+  }
 
 #ifdef BENCHMARK                   ////
   clock_t start_clock = clock();   ////
 #endif                             ////
 
-  printf("
+  printf("%d", k);
 
 #ifdef BENCHMARK                                              ////
   printf("\n  run time: %.3f ms\n"                            ////
@@ -25,13 +34,3 @@ int main() {
 
   return 0;
 }
-EOF
-fi
-
-vim $1.cpp
-printf "======= source code  =======\n"
-grep -Ev '^ *$|////$|^ *//' $1.cpp
-printf '\n\n'
-g++ -Wall -D BENCHMARK $1.cpp
-printf "======= program io  =======\n"
-./a.out

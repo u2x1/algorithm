@@ -1,22 +1,33 @@
-#!/bin/sh
-set -e
-
-if [ ! -f "$1.cpp" ]; then
-cat > $1.cpp <<EOF
 #ifdef BENCHMARK    ////
 #include <ctime>    ////
 #endif              ////
 
 #include <cstdio>
+#include <algorithm>
+struct A { int start; int end; };
+bool operator<(const A &a, const A &b) {
+  return a.end < b.end;
+}
 
 int main() {
-  scanf("%
+  int n;
+  scanf("%d", &n);
+  A as[n];
+  for(int i = 0; i < n; ++i) {
+    scanf("%d%d", &as[i].start, &as[i].end);
+  }
+  std::sort(as, as+n);
+  int cnt = 0; int last = -1;
+  for(int i = 0; i<n; ++i) {
+    if (as[i].start <= last) { continue; }
+    if (as[i].end > last) { last = as[i].end; ++cnt; }
+  }
 
 #ifdef BENCHMARK                   ////
   clock_t start_clock = clock();   ////
 #endif                             ////
 
-  printf("
+  printf("%d", cnt);
 
 #ifdef BENCHMARK                                              ////
   printf("\n  run time: %.3f ms\n"                            ////
@@ -25,13 +36,3 @@ int main() {
 
   return 0;
 }
-EOF
-fi
-
-vim $1.cpp
-printf "======= source code  =======\n"
-grep -Ev '^ *$|////$|^ *//' $1.cpp
-printf '\n\n'
-g++ -Wall -D BENCHMARK $1.cpp
-printf "======= program io  =======\n"
-./a.out

@@ -1,22 +1,28 @@
-#!/bin/sh
-set -e
-
-if [ ! -f "$1.cpp" ]; then
-cat > $1.cpp <<EOF
 #ifdef BENCHMARK    ////
 #include <ctime>    ////
 #endif              ////
 
 #include <cstdio>
 
+int f(int m, int n) {
+  if (m == 0 || n == 1) { return 1; }
+  if (n == 0) { return 0; }
+  if (m < n) { return f(m, m); }
+  return f(m, n-1) + f(m-n, n);
+}
+
 int main() {
-  scanf("%
+  int n;
+  scanf("%d", &n);
+  int a, b;
+  for(int i = 0; i < n && scanf("%d%d", &a, &b); ++i) {
+    printf("%d\n", f(a,b));
+  }
 
 #ifdef BENCHMARK                   ////
   clock_t start_clock = clock();   ////
 #endif                             ////
 
-  printf("
 
 #ifdef BENCHMARK                                              ////
   printf("\n  run time: %.3f ms\n"                            ////
@@ -25,13 +31,3 @@ int main() {
 
   return 0;
 }
-EOF
-fi
-
-vim $1.cpp
-printf "======= source code  =======\n"
-grep -Ev '^ *$|////$|^ *//' $1.cpp
-printf '\n\n'
-g++ -Wall -D BENCHMARK $1.cpp
-printf "======= program io  =======\n"
-./a.out
