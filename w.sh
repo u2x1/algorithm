@@ -30,7 +30,8 @@ fi
 
 vim $1.cpp
 printf "======= source code  =======\n"
-grep -Ev '^ *$|////$|^ *//' $1.cpp
+# grep -Ev '^ *$|////$|^ *//' $1.cpp
+grep -Ev '^ *$|////$' $1.cpp
 printf '\n\n'
 g++ -Wall -D BENCHMARK $1.cpp
 printf "======= program io  =======\n"

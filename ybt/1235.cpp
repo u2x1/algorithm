@@ -3,14 +3,23 @@
 #endif              ////
 
 #include <cstdio>
+#include <algorithm>
 
 int main() {
+  int n, k;
+  scanf("%d", &n);
+  int arr[n];
+  for(int i=0; i<n && 1==scanf("%d", &arr[i]); ++i);
+  scanf("%d", &k);
 
 #ifdef BENCHMARK                   ////
   clock_t start_clock = clock();   ////
 #endif                             ////
 
-  printf("%d", sizeof(int));
+  std::partial_sort(arr, arr+k, arr+n, [](int a, int b) { return a > b; });
+  for(int i=0; i<k;++i) {
+    printf("%d\n", arr[i]);
+  }
 
 #ifdef BENCHMARK                                              ////
   printf("\n  run time: %.3f ms\n"                            ////

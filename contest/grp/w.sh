@@ -1,0 +1,1 @@
+/home/ne1s07/algorithm/w.sh

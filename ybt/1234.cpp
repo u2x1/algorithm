@@ -5,12 +5,13 @@
 #include <cstdio>
 
 int main() {
+  scanf("%
 
 #ifdef BENCHMARK                   ////
   clock_t start_clock = clock();   ////
 #endif                             ////
 
-  printf("%d", sizeof(int));
+  printf("
 
 #ifdef BENCHMARK                                              ////
   printf("\n  run time: %.3f ms\n"                            ////
