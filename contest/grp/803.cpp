@@ -7,14 +7,6 @@
 
 struct Vec { int x; int y; };
 
-// int dot(Vec v1, Vec v2) {
-//   return (v1.x*v2.x)+(v2.y*v2.y);
-// }
-//
-// bool vertical(const Vec v1, const Vec v2) {
-//   return !dot(v1, v2);
-// }
-
 double len(const Vec v) {
   return std::sqrt(v.y*v.y+v.x*v.x);
 }
@@ -25,29 +17,14 @@ Vec vec(const int *p1, const int *p2) {
   return v;
 }
 
-
 int inSquare(int *p1, int *p2, int *p3, int *p4) {
-  const double sqrt2 = std::sqrt(2);
-  const int *p[4] = { p1, p2, p3, p4 };
-
-  Vec v[3];
-  for(int i = 0; i < 4; ++i) {
-    int pos = 0;
-    for(int j = 0; j < 4; ++j) {
-      if (i == j) { continue; }
-      v[pos++] = vec(*(p+i), *(p+j));
-    }
-
-    double fst = len(v[0]);
-    for(int i = 1; i < 3; ++i) {
-      const double it = len(v[i]);
-      if (std::abs(it-fst) < 0.0001
-       || std::abs(it-fst*sqrt2) < 0.0001
-       || std::abs(it*sqrt2-fst) < 0.0001 ) { continue; }
-      return 0;
-    }
-  }
-  return 1;
+  const double l1 = len(vec(p1, p2))
+             , l2 = len(vec(p3, p4))
+             , l3 = len(vec(p1, p3))
+             , l4 = len(vec(p2, p4))
+             , l5 = len(vec(p1, p4))
+             , l6 = len(vec(p2, p3));
+  return (l1 == l2) && (l3 == l4) && (l5 == l6);
 }
 
 int main() {
