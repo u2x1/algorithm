@@ -4,27 +4,23 @@
 
 #include <cstdio>
 #include <cmath>
+#include <algorithm>
 
-struct Vec { int x; int y; };
-
-double len(const Vec v) {
-  return std::sqrt(v.y*v.y+v.x*v.x);
-}
-
-Vec vec(const int *p1, const int *p2) {
+int len(const int *p1, const int *p2) {
   const int a = p2[0]-p1[0], b = p2[1]-p1[1];
-  Vec v; v.x = a; v.y = b;
-  return v;
+  return a*a+b*b;
 }
 
 int inSquare(int *p1, int *p2, int *p3, int *p4) {
-  const double l1 = len(vec(p1, p2))
-             , l2 = len(vec(p3, p4))
-             , l3 = len(vec(p1, p3))
-             , l4 = len(vec(p2, p4))
-             , l5 = len(vec(p1, p4))
-             , l6 = len(vec(p2, p3));
-  return (l1 == l2) && (l3 == l4) && (l5 == l6);
+  int  l[6] = { len(p1, p2)
+              , len(p3, p4)
+              , len(p1, p3)
+              , len(p2, p4)
+              , len(p1, p4)
+              , len(p2, p3) };
+  std::sort(l, l+6);
+  return ((l[0] == l[3]) && (l[4] == l[5])
+         && !(l[0] == 0 && l[5] == 0));
 }
 
 int main() {
