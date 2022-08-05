@@ -58,14 +58,24 @@ int cal(int y1, int m1, int d1, int y2, int m2, int d2) {
       y1=y2; m1=m2; d1=d2;
       y2=cy; m2=cm; d2=cd;
     }
-    int leftExtra = daysBtwMon(y1, m1, 12) - daysBtwDay(m1, 1, d1) + 1;
+    int leftExtra = daysBtwMon(y1, m1, 12) - daysBtwDay(m1, 1, d1);
     int rightExtra = daysBtwMon(y2, 1, m2-1) + daysBtwDay(m2, 1, d2);
     int dbt = daysBtwYear(y1+1, y2-1);
-    if (y1==y2) { return rightExtra+leftExtra-(281+isRun(y1)); }
-    return dbt+leftExtra+rightExtra;
+    if (y1==y2) { return 1+rightExtra+leftExtra-(281+isRun(y1)); }
+    return 1+dbt+leftExtra+rightExtra;
 }
 
 int main() {
+//  for(int i = 2019; i < 2023; ++i) {
+//    for(int j = 1; j < 13; ++j) {
+//      for(int k = 1; k <= 31; ++k) {
+//        printf("%d-%d-%d: %d \n", i, j, k, cal(2019, 1, 1, i, j, k));
+//      }
+//    }
+//    putchar(10);
+//  }
+//  return 0;
+
   int n;
   scanf("%d", &n);
   while(n--) {
