@@ -19,7 +19,6 @@ int main() {
     rst[i] += rst[i-1] + cnt;
     if (end[i]) {
       cnt -= end[i];
-      printf("rel %d: %d\n", i, relation[i]);
       rst[i+1] -= relation[i];
     }
   }
