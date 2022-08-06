@@ -3,19 +3,16 @@
 int main() {
   int n, t;
   scanf("%d%d", &n, &t);
-
-  int dp[t+1]={}, tmp;
-  for(int i=0; i<n; ++i) {
+  int dp[t+1]={1}, tmp;
+  while(n--) {
     scanf("%d", &tmp);
-    ++dp[tmp];
     for(int j=t; j>=tmp; --j) {
-      if (dp[j-tmp]) {
         dp[j] += dp[j-tmp];
-      }
     }
   }
-
-  printf("%d", dp[t]);
-
+  for(int j=1; j<=t; ++j) {
+    printf("%d ", dp[j]);
+  }
+  printf("\n%d", dp[t]);
   return 0;
 }

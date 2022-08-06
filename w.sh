@@ -4,7 +4,7 @@ set -e
 function f {
 if [ ! -f "$1.cpp" ]; then
 cat > $1.cpp <<EOF
-include <cstdio>
+#include <cstdio>
 
 int main() {
   scanf("%
