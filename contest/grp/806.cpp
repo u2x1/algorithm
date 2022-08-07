@@ -1,6 +1,6 @@
 #include <cstdio>
 
-int cnt['z'+1];
+long long cnt['z'+1];
 
 int main() {
   int n;
