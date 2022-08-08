@@ -2,8 +2,8 @@
 #include <ctime>    ////
 #endif              ////
 
-#define DEBUG printf("[%s] at ln%d\n", __FUNCTION__, __LINE__);
-#define PT(var, d) printf(#var": %"#d" ", var);
+#define HIT printf("<%s> at ln%d\n", __FUNCTION__, __LINE__); fflush(stdout);
+#define PT(var, d) printf(#var": %"#d" \n", var);
 #define NL printf("\n");
 #include <cstdio>
 #include <cstring>
