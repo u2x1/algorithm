@@ -3,8 +3,8 @@
 
 #define orep(i, a, b) for (int i = (a); i <  (b); ++i)
 #define crep(i, a, b) for (int i = (a); i <= (b); ++i)
-#define min(a, b) ((a) < (b) ? a : b)
-#define max(a, b) ((a) > (b) ? a : b)
+#define min(a, b) ((a) < (b) ? (a) : (b))
+#define max(a, b) ((a) > (b) ? (a) : (b))
 #define min3(a, b, c) min(min(a,b),c)
 #define max3(a, b, c) max(max(a,b),c)
 #define printArr(arr,len,type,split) orep(i,0,len) { printf("%" type, arr[i]); putchar(split); }
@@ -37,8 +37,7 @@ int main() {
     const int nextii = max(1, ii-1), nextjj = max(1, jj-1);
     if (dp[nextii][jj] > dp[ii][nextjj] && ii != nextii) {
       ii = nextii;
-      continue;
-    } else { jj = nextjj; continue; }
+    } else { jj = nextjj; }
   } arr[1][1] = 0;
 
   crep(i, 1, n) {
