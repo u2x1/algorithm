@@ -13,16 +13,9 @@
 #define NL           putchar(10);
 #define REDIR        freopen("../../data.in", "r", stdin);
 
-int read() {
-  int x = 0;
-  char ch = 0;
-  while (ch < '0' || ch > '9') {
-    ch = getchar();
-  }
-  while (ch >= '0' && ch <= '9') {
-    x = x * 10 + (ch - '0');
-    ch = getchar();
-  }
+inline int read() {
+  int x=0;char c=0;
+  while(c<'0'||c>'9'){c=getchar();} while(c>='0'&&c<='9'){x=x*10+(c-'0');c=getchar();}
   return x;
 }
 
