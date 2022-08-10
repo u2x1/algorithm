@@ -15,32 +15,19 @@
 
 
 int main() {
-  int n;
-  scanf("%d", &n);
+  int m, k;
+  scanf("%d", &m);
+  int arr[m+1];
+  crep(i, 1, m) { scanf("%d", arr+i); arr[i] += arr[i-1]; }
 
-  ++n;
-  int arr[n][n]={};
-  int row, col, num;
-  while(1) {
-    scanf("%d%d%d", &row, &col, &num);
-    if (!row && !col && !num) { break; }
-    arr[row][col] = num;
-  }
-  int dp[n][n][n][n] = {};
-  orep(i, 1, n) {
-    orep(j, 1, n) {
-      orep(k, 1, n) {
-        orep(m, 1, n) {
-          dp[i][j][k][m] = max(max(dp[i-1][j][k-1][m], dp[i-1][j][k][m-1])
-                              ,max(dp[i][j-1][k-1][m], dp[i][j-1][k][m-1])) + arr[i][j];
-          if (i!=k && j!=m) { dp[i][j][k][m] += arr[k][m]; }
-        }
-      }
+  int dp[k+1][m];
+  crep(kk, 1, k) {
+    orep(ii, k-1, m) {
+      dp[kk][ii] = max(dp[kk][ii], dp[kk-1][ii]
     }
   }
 
-  --n;
-  printf("%d", dp[n][n][n][n]);
+  printf("
 
   return 0;
 }
