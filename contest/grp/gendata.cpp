@@ -23,21 +23,15 @@ int main() {
 
 //  int n = rand() % 2000, m = 2000000 / n;
 //  int n = rand() % 20, m = 200 / n;
-  int t = 5;
+  int t = 100;
   fprintf(fp_out, "%d\n", t);
   srand((unsigned)rand());
+  t*=2;
   while(t--) {
-    int n = 2+rand() % 10;
+    int n = rand() % 1000000;
     srand((unsigned)rand());
-    int s = rand() % 50;
-    srand((unsigned)rand());
-    fprintf(fp_out, "%d %d\n", n, s);
-    orep(i, 0, n) { 
-      fprintf(fp_out, "%d ", rand() % 10);
-      srand((unsigned)rand());
-    }
-    fprintf(fp_out, "\n");
-    PTD(n); PTD(s); NL;
+    fprintf(fp_out, "%d ", n);
+    
   }
 
   // int k = rand();

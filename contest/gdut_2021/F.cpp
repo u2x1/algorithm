@@ -1,5 +1,5 @@
 #include <cstdio>
-#include <cstring>
+#include <vector>
 
 #define orep(i,a,b)  for(int i=(a); i< (b); ++i)
 #define crep(i,a,b)  for(int i=(a); i<=(b); ++i)
@@ -16,33 +16,30 @@
 
 
 int main() {
-  int f, v;
-  scanf("%d%d", &f, &v);
-
-  int dp[f+1][v+1]={}; memset(dp, -0x3f, sizeof(dp));
-  dp[0][0] = 0;
-  crep(i, 1, f) { dp[i][0] = 0; }
-  crep(i, 1, v) { dp[0][i] = 0; }
-  int a[f+1][v+1]={};
-  int sl[f+1][v+1]={};
-  crep(i, 1, f) {
-    crep(j, 1, v) {
-      scanf("%d", &a[i][j]);
-      crep(ii, i, j) {
-        if (dp[i][j] < dp[i-1][ii-1]+a[i][ii]) {
-          dp[i][j] = dp[i-1][ii-1]+a[i][ii];
-          sl[i][j] = ii;
-        }
+  int n;
+  scanf("%d ", &n);
+  std::vector<int> os, ss, us;
+  orep(i, 0, n) {
+    const char c = getchar();
+    if (c == 'o') { os.push_back(i); }
+    else if (c == 's') { ss.push_back(i); }
+    else if (c == 'u') { us.push_back(i); }
+  }
+  int cnt = 0;
+  orep(i, 0, os.size()) {
+    const int oPos = os[i];
+    orep(j, 0, ss.size()) {
+      const int sPos = ss[j];
+      if (sPos < oPos) { continue; }
+      orep(k, 0, us.size()) {
+        const int uPos = us[k];
+        if (uPos < sPos) { continue; }
+        ++cnt;
       }
     }
   }
-  printf("%d\n", dp[f][v]);
-  int rev[f+1];
-  for(int i = f, j = v; i>0; --i) {
-    rev[i] = sl[i][j];
-    j = sl[i][j]-1;
-  }
-  crep(i, 1, f) { printf("%d ", rev[i]); }
+
+  printf("%d", cnt);
 
   return 0;
 }
