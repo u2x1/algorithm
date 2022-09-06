@@ -10,23 +10,30 @@
 #define REDIR        freopen("data.in", "r", stdin);
 
 int n, m, init;
+int memo[1000][1000];
 
 const int steps(const int cur, const int target) {
+  if (cur < 1000 && target < 1000 && memo[cur][target]) { return memo[cur][target]; }
   if (cur > target) {
-    return m-(cur-target);
+    const int rst = m-(cur-target);
+    if (cur < 1000 && target < 1000) { 
+      memo[cur][target] = rst;
+    }
+    return rst;
   } else {
-    return target-cur;
+    const int rst = target-cur;
+    if (cur < 1000 && target < 1000) { 
+      memo[cur][target] = rst;
+    }
+    return rst;
   }
 }
 
 int cal(const int v, int *arr, int *dist) {
   int rst = 0;
-  // printf("%d selected, ", v);
   crep(i, 2, n) {
     rst += std::min(dist[i], 1+steps(v, arr[i]));
-  //  printf("%d ", dp[i]);
   }
-  // NL;
   return rst;
 }
 
