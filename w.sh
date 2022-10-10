@@ -2,8 +2,8 @@
 # set -e
 
 sourceFile="$1.cpp"
-inFile=z_$1_out
-outFile=z_$1_in
+inFile=z_$1_in
+outFile=z_$1_out
 
 function writeTest {
   if [ -f $inFile ]; then
@@ -19,6 +19,38 @@ function writeTest {
     printf '%s\n' "$input"  > $inFile
     printf '%s\n' "$output" > $outFile
     printf "\ndone.\n"
+  fi
+}
+
+function judge {
+  printf "===================================================\n\n"
+
+  
+  printf "\e[1;30mJudging...\033[0m\n"
+  
+  if [ ! $flag -eq -120 ] ; then
+    processOut=$(cat $inFile | ./zout)
+    if [ $? -eq 0 ] ; then 
+      diff -w -u --color $outFile <(echo -e "$processOut")
+      flag=$?
+      if [ $flag -eq 1 ]; then
+        printf "==============RAW OUTPUT===========================\n"
+        echo -e "$processOut"
+      fi
+    else
+      flag=-100
+    fi
+  fi
+  
+  printf "\nstatus: "
+  if [ $flag -eq 0 ]; then
+    echo -e "\e[0;32mACCEPTED\033[0m"
+  elif [ $flag -eq -100 ] ; then
+    echo -e "\e[0;35mTIME LIMIT EXCEEDED\033[0m"
+  elif [ $flag -eq -120 ] ; then
+    echo -e "\e[0;33mCOMPILATION ERROR\033[0m"
+  else
+    echo -e "\e[0;31mWRONG ANSWER\033[0m"
   fi
 }
 
@@ -47,38 +79,21 @@ EOF
   if [ ! $? -eq 0 ] ; then 
     flag=-120
   fi
-  
-  printf "===================================================\n\n"
-  
-  printf "\e[1;30mJudging...\033[0m\n"
-  
-  if [ ! $flag -eq -120 ] ; then
-    processOut=$(cat $inFile | timeout 1s ./zout)
-    if [ $? -eq 0 ] ; then 
-      echo $processOut | diff -w -u --color $outFile -
-      flag=$?
-    else
-      flag=-100
-    fi
-  fi
-  
-  printf "\nstatus: "
-  if [ $flag -eq 0 ]; then
-    echo -e "\e[0;32mACCEPTED\033[0m"
-  elif [ $flag -eq -100 ] ; then
-    echo -e "\e[0;35mTIME LIMIT EXCEEDED\033[0m"
-  elif [ $flag -eq -120 ] ; then
-    echo -e "\e[0;33mCOMPILATION ERROR\033[0m"
+
+  if [ ! -f $inFile ]; then
+    printf "\n===================================================\n\n"
+    ./zout
   else
-    echo -e "\e[0;31mWRONG ANSWER\033[0m"
+    judge
   fi
+  
   printf "\n===================================================\n\n"
 
   if [ $flag -eq -100 ]; then
     read -n 1 -p "> check output? (y/n) > " yn
     printf "\n"
     if [ "$yn" = "y" ] ; then
-      printf "%s\n" $processOut
+      echo $processOut
     fi
   fi
   
