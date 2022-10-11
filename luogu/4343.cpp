@@ -1,45 +1,46 @@
 #include <cstdio>
+#include <climits>
+
 
 #define orep(i,a,b)  for(auto i=(a); i< (b); ++i)
 #define crep(i,a,b)  for(auto i=(a); i<=(b); ++i)
 #define NL           putchar(10);
 
-int l, k;
+#define max(a,b) a>b?a:b
 
-int judge(int *arr, int line) {
-  long long cur = 0; int cK = 0;
+int l, k;
+int arr[100005];
+
+long long judge(const long long line) {
+  long long cur = 0; long long cK = 0;
   orep(i, 0, l) {
-    cur += arr[i];
-    if (cur >= line) {
-      cur = 0;
-      ++cK;
-      if (cK > k) { return 1; }
-    } else if (cur < 0) { cur = 0; }
+    cur = max(cur+arr[i], 0);
+    if (cur >= line) { cur = 0; ++cK;} 
   }
-  cK += cur > 0;
-  if (cK < k) { return -1; }
-  return 0;
+  return cK;
 }
 
 int main() {
   scanf("%d%d",  &l, &k);
-  int arr[l];
   orep(i, 0, l) { scanf("%d", arr+i); }
-  int l=0, r=0x3f3f3f3f, mid=(l+r)/2;
-  while(1) {
-    const int flag = judge(arr, mid);
-    if (flag == -1) {
-      r = mid;
-    } else if (flag == 1) {
-      l = mid; 
-    } else {
-      break;
-    }
-    mid = (l+r) / 2;
+  long long l=1, r=1e18, mid;
+  long long ans1, ans2=-1;
+  while(l<=r) {
+    mid = (l+r)>>1;
+    const long long rst = judge(mid);
+    if (rst > k) { l = mid + 1;}
+    else if (rst < k) { r = mid - 1;}
+    else { ans2 = mid; l = mid + 1; }
   }
-  l=mid, r=mid;
-  while(!judge(arr, --l)); ++l;
-  while(!judge(arr, ++r)); --r;
-  printf("%d %d", l, r);
+  if (ans2 == -1) { printf("-1"); return 0; }
+  l = 1; r=ans2;
+  while(l<=r) {
+    mid = (l+r)>>1;
+    const long long rst = judge(mid);
+    if (rst > k) { l = mid + 1;}
+    else if (rst < k) { r = mid - 1;}
+    else { ans1 = mid; r = mid - 1; }
+  }
+  printf("%lld %lld", ans1, ans2);
   return 0;
 }
