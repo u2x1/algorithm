@@ -12,14 +12,19 @@ inline long long read() {
   return x;
 }
 
+long long gcd(long long a, long long b) {
+  if (a < b) { std::swap(a, b); }
+  return b ? gcd(b, a%b) : a;
+}
 
 int main() {
   long long m = read();
   if (m == 1) { printf("1"); return 0; }
-  long long rst = 1;
-  crep(i, 2ll, m) {
-    rst = (rst * i) % m;
-    if (rst == 0) { printf("%lld", i); return 0; }
+  long long bound = 2 * std::sqrt(m) + 0.5;
+  crep(i, 2ll, bound) {
+    m /= gcd(m, i);
+    if (m == 1) { printf("%lld", i); return 0; }
   }
+  printf("%lld", m);
   return 0;
 }
