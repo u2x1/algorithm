@@ -1,51 +1,35 @@
 #include <cstdio>
-#include <iostream>
-#include <cmath>
-#include <algorithm>
-#include <cstring>
-#include <cctype>
-#include <vector>
-#include <map>
-using namespace std;
-const int mod = 1000000007;
-const int N = 1e7;
-typedef pair<int, int> PII;
-long long temp[20], co[N][20], n, ans;
-using namespace std;
-int cnt;
 
-void dfs(const int u, const long long sum) {
-	if (u == 10) {
-		if (sum == n) {
-			for (int i = 0; i < 10; i++) {
-				co[ans][i] = temp[i];
-      }
-			ans++;
-		}
-    cnt++;
-		return;
-	}
-
-	for (int i = 1; i <= 3; i++) {
-		temp[u] = i;
-		dfs(u + 1, sum + i);
-	}
+int month_day(int year, int yearday, int *pmonth, int *pday) 
+{  // Add your code here
+if(yearday>367){
+  return 0;
+}
+ int k,leap;
+    int tab[2][13]={
+        {0,31,28,31,30,31,30,31,31,30,31,30,31},
+        {0,31,29,31,30,31,30,31,31,30,31,30,31},  
+    };
+    
+    leap=((year%4==0&&year%100!=0)||(year%400==0));
+    printf("leap %d\n", leap);
+    
+    for(k=1;k < 13 && yearday>tab[leap][k];k++) {
+      yearday -= tab[leap][k];
+      printf("yearday %d k %d\n", yearday, k);
+    }
+    *pmonth=k;
+    *pday=yearday;
+    printf("%d  %d\n",*pmonth,yearday);
+    if(*pmonth>13){
+      return 0;
+    }
+  return 1;
 }
 
-int main(void) {
-	cin >> n;
-	if (n <= 9 || n >= 31) {
-		cout << 0;
-		return 0;
-	} else {
-		dfs(0, 0);
-  }
-	cout << ans << endl;
-	for (int i = 0; i < ans; i++) {
-		for (int j = 0; j < 10; j++)
-			cout << co[i][j] << ' ';
-		cout << endl;
-	}
-
-	return 0;
+int main() {
+  int pmonth, pday;
+  month_day(1996, 366, &pmonth, &pday);
+  printf("pMonth %d pDay %d", pmonth, pday);
+  return 0;
 }

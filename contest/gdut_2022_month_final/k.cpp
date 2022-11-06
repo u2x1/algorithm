@@ -18,7 +18,7 @@ void count(const int n, int &cnt1, int &cnt2) {
     dp1[i] = dp2[i] = 1;
   }
   orep(i, 0, n) {
-    const long long rkDn = arr[i].rk-1, rkUp = arr[i].rk+1;
+    const int rkDn = arr[i].rk-1, rkUp = arr[i].rk+1;
     if (rkDn > -1 && sortedArr[rkDn].id < i) {
       dp1[i] = dp1[sortedArr[rkDn].id]+1;
       cnt1 = std::max(cnt1, dp1[i]);
@@ -38,9 +38,10 @@ int main() {
   }
   memcpy(sortedArr, arr, n*sizeof(K));
   std::sort(sortedArr, sortedArr+n, cmpInc);
-  orep(i, 0, n) { sortedArr[i].rk = i; }
-  memcpy(arr, sortedArr, n*sizeof(K));
-  std::sort(arr, arr+n, cmpId);
+  orep(i, 0, n) {
+    sortedArr[i].rk = i;
+    arr[sortedArr[i].id].rk = i;
+  }
 
   int cnt1 = 0, cnt2 = 0;
   count(n, cnt1, cnt2);
