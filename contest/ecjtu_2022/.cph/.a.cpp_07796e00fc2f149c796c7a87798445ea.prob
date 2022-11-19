@@ -1,0 +1,1 @@
+{"name":"Local: a","url":"/home/u2x1/coding/algorithm/contest/ecjtu_2022/a.cpp","tests":[{"id":1668769336071,"input":"5  5  2\n1  2  3  4  5","output":"8"},{"id":1668769509240,"input":"5 5 10\n1 1 1 1 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/u2x1/coding/algorithm/contest/ecjtu_2022/a.cpp","group":"local","local":true}
