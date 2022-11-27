@@ -1,55 +1,42 @@
 #include <cstdio>
-#include <set>
-#include <map>
+#include <queue>
 
 #define orep(i,a,b)  for(auto i=(a); i!=(b); ++i)
 #define NL           putchar(10);
 
-const int maxN = 1e7+5;
-std::set<int> boat;
-std::map<int, int> cnt;
-bool vis[100000];
-int tot;
-
-void mod(int t, int i) {
-  if (cnt.find(t) == cnt.cend()) {
-    cnt[t] = cnt.rbegin()->second + i;
-  } else {
-    cnt[t] += i;
-  }
-}
+const int maxN = 1e6;
+int arr[maxN];
+bool vis[maxN];
+struct st{int id, t;};
+std::queue<st> stq;
+int querys[maxN], qCnt;
 
 int main() {
-  cnt[0] = 0;
   int n; scanf("%d", &n);
   while(n--) {
-    int q; scanf("%d", &q);
-    if(q == 1) {
-      int t, b;
-      scanf("%d%d", &t, &b);
-      tot += !vis[b]; vis[b] = !vis[b];
-      if (boat.find(b) != boat.cend()) {
-        mod(t, -1);
-        boat.erase(b);
-      }
-      else {
-        mod(t, +1);
-        boat.insert(b);
-      }
+    int q, t; scanf("%d%d", &q, &t);
+    if (q==1) {
+      int id; scanf("%d", &id);
+      if (!vis[id]) { stq.push({id, t}); }
+      vis[id] = !vis[id];
     } else {
-      int t; scanf("%d", &t);
-      auto up = cnt.upper_bound(t);
-      if (up == cnt.cbegin()) {
-        printf("0");
-      } else if (up == cnt.cend()) {
-        printf("%d %d", cnt.crbegin()->first, cnt.crbegin()->second);
-      } else {
-        printf("%d", (--up)->second);
-      }
-      NL;
+      querys[qCnt++] = t;
     }
   }
-  printf("%d", tot);
-
+  int cnt = 0;
+  orep(i, 0, qCnt) {
+    const int qt = querys[i];
+    while(stq.size()) {
+      int t = stq.front().t;
+      if (t > qt) {
+        printf("%d", cnt); NL;
+        break;
+      } else {
+        ++cnt;
+      }
+      stq.pop();
+    }
+  }
+  printf("%d", cnt+stq.size());
   return 0;
 }
