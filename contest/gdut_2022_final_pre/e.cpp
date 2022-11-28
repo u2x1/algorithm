@@ -1,7 +1,7 @@
 #include <cstdio>
 #include <queue>
 
-#define orep(i,a,b)  for(auto i=(a); i!=(b); ++i)
+#define orep(i,a,b)  for(auto i=(a); i<(b); ++i)
 #define NL           putchar(10);
 
 const int maxN = 1e6;
@@ -26,16 +26,16 @@ int main() {
   int cnt = 0;
   orep(i, 0, qCnt) {
     const int qt = querys[i];
+    bool flag = 0;
     while(stq.size()) {
-      int t = stq.front().t;
-      if (t > qt) {
-        printf("%d", cnt); NL;
-        break;
+      if (stq.front().t > qt) {
+        printf("%d", cnt); NL; flag = 1; break;
       } else {
         ++cnt;
       }
       stq.pop();
     }
+    if (!flag) { printf("%d", cnt); NL; }
   }
   printf("%d", cnt+stq.size());
   return 0;
