@@ -1,46 +1,34 @@
 #include <cstdio>
+#include <algorithm>
 
 #define orep(i,a,b)  for(int i=(a); i< (b); ++i)
-#define crep(i,a,b)  for(int i=(a); i<=(b); ++i)
-#define abs(a)       ((a)<0?-(a):(a))
-#define min(a,b)     ((a)<(b)?(a):(b))
-#define min3(a,b,c)  min(min(a,b),c)
-#define max(a,b)     ((a)>(b)?(a):(b))
-#define max3(a,b,c)  max(max(a,b),c)
-#define HIT          printf("entered <%s> at ln:%d\n", __FUNCTION__, __LINE__); fflush(stdout);
-#define PTD(v)       printf(#v ": %d\t", v); fflush(stdout);
-#define PTC(v)       printf(#v ": %c\t", v); fflush(stdout);
 #define NL           putchar(10);
-#define REDIR        freopen("../../data.in", "r", stdin);
 
+int arr[100][100], dp[100][100];
 
 int main() {
-  int n;
-  scanf("%d", &n);
-
-  ++n;
-  int arr[n][n]={};
+  int n; scanf("%d", &n);
   int row, col, num;
   while(1) {
     scanf("%d%d%d", &row, &col, &num);
     if (!row && !col && !num) { break; }
     arr[row][col] = num;
   }
-  int dp[n][n][n][n] = {};
-  orep(i, 1, n) {
-    orep(j, 1, n) {
-      orep(k, 1, n) {
-        orep(m, 1, n) {
-          dp[i][j][k][m] = max(max(dp[i-1][j][k-1][m], dp[i-1][j][k][m-1])
-                              ,max(dp[i][j-1][k-1][m], dp[i][j-1][k][m-1])) + arr[i][j];
-          if (i!=k && j!=m) { dp[i][j][k][m] += arr[k][m]; }
-        }
+
+  orep(i, 1, n+1) {
+    for(int b = 1; b <= n; ++b) {
+      for(int a = 1; a <= b; ++a) {
+        dp[a][b] += arr[i][a] + (a!=b ? arr[i][b] : 0);
       }
+      for(int a = 1; a < b; ++a) {
+        dp[a][b] = std::max(dp[a-1][b] + arr[i][a], dp[a][b]);
+      }
+      for(int a = 1; a < b; ++a) {
+        dp[a][b] = std::max(dp[a][b-1] + arr[i][b], dp[a][b]);
+      }
+      dp[b][b] = std::max(dp[b][b], dp[b-1][b]);
     }
   }
-
-  --n;
-  printf("%d", dp[n][n][n][n]);
-
+  printf("%d", dp[n][n]);
   return 0;
 }

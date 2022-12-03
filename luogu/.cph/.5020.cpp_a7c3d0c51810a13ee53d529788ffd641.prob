@@ -1,0 +1,1 @@
+{"name":"Local: 5020","url":"/home/u2x1/coding/algorithm/luogu/5020.cpp","tests":[{"id":1669814718019,"input":"1\n4\n2 3 4 5","output":""},{"id":1669815136240,"input":"1\n3\n250 615 750","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/u2x1/coding/algorithm/luogu/5020.cpp","group":"local","local":true}
