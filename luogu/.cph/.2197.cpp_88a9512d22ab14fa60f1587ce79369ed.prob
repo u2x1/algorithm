@@ -1,0 +1,1 @@
+{"name":"Local: 2197","url":"/home/u2x1/project/algorithm/luogu/2197.cpp","tests":[{"id":1670227288923,"input":"2\n2\n1 1\n2\n1 0","output":"No\nYes"},{"id":1670227625561,"input":"1\n5\n0 0 0 0 0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/u2x1/project/algorithm/luogu/2197.cpp","group":"local","local":true}
