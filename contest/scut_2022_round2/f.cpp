@@ -25,10 +25,6 @@ int main() {
     dp2[i][1] = std::min(dp2[i-1][0], dp2[i-1][1]) + arr[i];
   }
   dp2[n-1][0] = dp2[n-2][1];
-  // printf("%lld", dp1[n-1][1]);
-  // NL;
-  // printf("%lld", dp2[n-1][0]);
-  // NL;
   printf("%lld", std::min(dp1[n-1][1], dp2[n-1][0]));
   return 0;
 }
