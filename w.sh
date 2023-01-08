@@ -23,20 +23,18 @@ function writeTest {
 }
 
 function judge {
-  printf "===================================================\n\n"
+  printf "==================================================\n\n"
 
-  
-  printf "\e[1;30mJudging...\033[0m\n"
-  
+  printf "Judging...\n\n"
+  printf ".....INPUT....\n"
+  head -c -1 $inFile > /dev/stdout
+
+  printf "\n\n+.......................+.........................\n"
   if [ ! $flag -eq -120 ] ; then
     processOut=$(cat $inFile | ./zout)
     if [ $? -eq 0 ] ; then 
-      diff -w -u --color $outFile <(echo -e "$processOut")
+      diff -w -W 40 --color -y $outFile <(echo -e "$processOut")
       flag=$?
-      if [ $flag -eq 1 ]; then
-        printf "==============RAW OUTPUT===========================\n"
-        echo -e "$processOut"
-      fi
     else
       flag=-100
     fi
@@ -59,9 +57,11 @@ function f {
   cat > $sourceFile <<EOF
 #include <cstdio>
 
-#define orep(i,a,b)  for(auto i=(a); i< (b); ++i)
-#define crep(i,a,b)  for(auto i=(a); i<=(b); ++i)
-#define NL           putchar(10);
+#define orep(i,l,r) for(int i = (l); i < (r); ++i)
+#define NL          putchar(10);
+
+const int maxN = 2e5+5;
+int arr[maxN];
 
 int main() {
   scanf("%
@@ -75,19 +75,19 @@ EOF
   
   flag=0
   vim $sourceFile
-  g++ -o zout -Wall $sourceFile
+  g++ -g -fsanitize=address -Wall -Wextra -Wshadow -o zout -Wall $sourceFile
   if [ ! $? -eq 0 ] ; then 
     flag=-120
   fi
 
   if [ ! -f $inFile ]; then
-    printf "\n===================================================\n\n"
+    printf "\n==================================================\n\n"
     ./zout
   else
     judge
   fi
   
-  printf "\n===================================================\n\n"
+  printf "\n==================================================\n\n"
 
   if [ $flag -eq -100 ]; then
     read -n 1 -p "> check output? (y/n) > " yn
