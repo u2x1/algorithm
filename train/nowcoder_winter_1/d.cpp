@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include <iomanip>
 #include <cmath>
 
@@ -13,21 +14,21 @@ int main() {
   int t; std::cin >> t;
   std::cout << std::setprecision(10);
   while(t--){
-    double a, b, c, d; std::cin>>a >> b>>c>>d;
-    int pt[4][2] = { {0,0}, {a,0}, {0,b}, {a,b} };
-    bool inside = (a*a+b*b) > (c*c+d*d) && (a>0 == c>0) && (b>0 == d>0);
-    double ret = -1, ds = -1;
-    orep(i, 0, 4) {
-      double d = (c-pt[i][0]) * (c-pt[i][0]) + (d-pt[i][1]) *(d-pt[i][1]); 
-      if (d > ds) {
-        if (inside) {
-          ret = sqrt(d)*sqrt(d)/2;
-          ds = d;
-        }
-      }
+    double sx, sy, tx, ty; std::cin >> sx >> sy >> tx >> ty;
+    if (tx <= sx && ty <= sy) {
+      double w = std::max(tx, sx-tx)
+           , h = std::max(ty, sy-ty);
+      std::cout << w*h / (sx*sy);
+    } else if (tx >= sx && ty <= sy) {
+      double h = std::max(ty, sy-ty);
+      std::cout << (sx*h) / (sx*sy+(tx-sx)*h);
+    } else if (tx <= sx && ty >= sy) {
+      double w = std::max(tx, sx-tx);
+      std::cout << (sy*w) / (sx*sy+(ty-sy)*w);
+    } else {
+      std::cout << sx*sy / (tx*ty);
     }
-    std::cout << ret << NL;
+    std::cout << NL;
   }
-
   return 0;
 }
