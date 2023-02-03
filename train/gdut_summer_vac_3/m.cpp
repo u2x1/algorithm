@@ -12,7 +12,7 @@ int main() {
   std::ios::sync_with_stdio(0); std::cin.tie(0);
   int n, m;
   while(std::cin >> n >> m) {
-    std::vector in(n+1, std::vector<int>());
+    std::vector<std::vector<int> > in(n+1, std::vector<int>());
     std::vector<int> out(n+1, 0);
     std::vector<bool> used(n+1, 0);
     orep(i, 0, m) {
