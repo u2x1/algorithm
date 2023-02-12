@@ -42,7 +42,7 @@ function judge {
       printf "\n.....INPUT....\n"
       head -c -1 $inFile > /dev/stdout
       printf "\n\n.....OUTPUT....\n"
-      printf "$processOut\n"
+      echo "$processOut"
       printf "\n\n+...............................+.................\n"
       diff -w --color -y $outFile <(echo -e "$processOut")
     fi
