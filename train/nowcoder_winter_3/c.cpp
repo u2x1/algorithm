@@ -19,21 +19,20 @@ void out(int j, int x) {
 int main() {
   std::ios::sync_with_stdio(false); std::cin.tie(nullptr);
   int n; std::cin >> n;
-  if (!(n%5)) {
-    for(int j=1; j < n; j+=5) {
-    }
-    return 0;
-  }
-  for(int i = 0; i <= n; i += 4) {
-    if (!((n - i) % 6)) {
-      for(int j=1; j < i; j+=4) {
+  if (n == 6) {
+    out(1, 6);
+  } else if (n == 11) { 
+    out(1, 6); out(7, 5);
+  } else if (n == 4 || n == 5 || n == 8 || n == 10 || n >= 12){
+    for(int i = 1; i < n;) {
+      if ((n-i+1) % 4) {
+        out(i, 5); i += 5;
+      } else {
+        out(i, 4); i += 4;
       }
-      for(int j=i+1; j <= n; j+=6) {
-      }
-      return 0;
     }
+  } else {
+    std::cout << -1;
   }
-  std::cout << -1;
-
   return 0;
 }

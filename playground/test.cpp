@@ -13,15 +13,17 @@ long long power(int a,int b){
 	return ans%10;
 }
 int main(){
-	scanf("%s",str);
-	if(strlen(str)<2){
-		int m = str[strlen(str)-1]-'0';
-		int ans = 1+power(2,m)+power(3,m)+power(4,m);
-		ans%=5;cout<<ans;return 0;
-	}
-	int m=(str[strlen(str)-2]-'0')*10+str[strlen(str)-1]-'0';
-	m = m%4==0?4:m%4;
-	int ans = 1 + power(2,m)%5 + power(3,m)%5 + power(4,m)%5;
-	ans%=5;
-	cout<<ans;
+  std::cout << "sizeof(float): "<< sizeof(long long) << '\n';
+  std::cout << "sizeof(float*): "<< sizeof(long long*);
+	// scanf("%s",str);
+	// if(strlen(str)<2){
+	// 	int m = str[strlen(str)-1]-'0';
+	// 	int ans = 1+power(2,m)+power(3,m)+power(4,m);
+	// 	ans%=5;cout<<ans;return 0;
+	// }
+	// int m=(str[strlen(str)-2]-'0')*10+str[strlen(str)-1]-'0';
+	// m = m%4==0?4:m%4;
+	// int ans = 1 + power(2,m)%5 + power(3,m)%5 + power(4,m)%5;
+	// ans%=5;
+	// cout<<ans;
 }
