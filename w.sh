@@ -84,7 +84,8 @@ function f {
 #include <iostream>
 
 #define orep(i,l,r) for(auto i = (l); i < (r); ++i)
-#define NL          std::cout << '\n';
+#define drep(i,l,r) for(auto i = (l); i > (r); --i)
+#define NL          std::cout << '\n'
 
 const int maxN = 2e5+5;
 int arr[maxN];
@@ -99,7 +100,7 @@ EOF
 
   flag=0
   vim $sourceFile
-  g++ -g -fsanitize=address -Wall -Wextra -Wshadow -o zout -Wall $sourceFile
+  g++ -O0 -g -fsanitize=address -Wall -Wextra -Wshadow -o zout -Wall $sourceFile
   if [ ! $? -eq 0 ] ; then
     flag=-120
   fi

@@ -16,9 +16,9 @@ int main() {
     std::cin >> arr[i];
     arr[i+n] = arr[i];
   }
-  orep(i, 1, n+1) orep(j, 0, 2*n-2) orep(k, j, j+i) {
-    dp[j][j+i] = std::max(dp[j][j+i]
-        , dp[j][k] + dp[k+1][j+i] + arr[j] * arr[k+1] * arr[j+i+1]);
+  orep(s, 1, n+1) orep(i, 0, 2*n-1) orep(k, i, i+s) {
+    dp[i][i+s] = std::max(dp[i][i+s]
+        , dp[i][k] + dp[k+1][i+s] + arr[i] * arr[k+1] * arr[i+s+1]);
   }
   orep(i, 0, n) {
     ret = std::max(ret, dp[i][i+n-1]);

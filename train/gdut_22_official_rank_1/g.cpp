@@ -1,54 +1,53 @@
 #include <iostream>
+#include <vector>
 #include <algorithm>
 
 #define orep(i,l,r) for(auto i = (l); i < (r); ++i)
 #define NL          std::cout << '\n';
 
 const int maxN = 1e6+5;
-int arr[maxN];
-long long sum[maxN];
-long long rst[maxN]; int cnt;
+long long arr[maxN];
+long long sum = 0ll;
 
-long long leftsum[maxN], rightsum[maxN];
+std::vector<long long> l, r;
+
+long long f(long long _x) {
+  const long long x = sum - _x;
+  long long ret = 0ll;
+  for(unsigned long long i = 0ul, j = r.size()-1; i != l.size(); ++i) {
+    // find l[i] + r[j] > x
+    if (l[i] + r[j] <= x) { continue; }
+    while(j != 0 && l[i] + r[j-1] > x) { --j; }
+    ret += r.size() - j;
+  }
+  return ret;
+}
 
 int main() {
   std::ios::sync_with_stdio(0); std::cin.tie(0);
-  int n, k, m; std::cin >> n >> k >> m;
-  long long allsum = 0;
+  long long n, k, m; std::cin >> n >> k >> m;
   orep(i, 1, 1+n) {
     std::cin >> arr[i];
-    allsum += arr[i];
+    sum += arr[i];
   }
 
+  l.push_back(0); r.push_back(0);
   orep(i, 1, k) {
-    leftsum[i] = leftsum[i-1] + arr[i];
-    std::cout << "leftsum " << i <<leftsum[i]; NL;
-  } int leftcnt = k-1;
-  for(int i = n, j = 1; i > k; --i, ++j) {
-    rightsum[j] = rightsum[j-1] + arr[i];
-    std::cout << "rightsum " << j <<rightsum[j]; NL;
-  } int rightcnt = n-leftcnt-1;
-  std::sort(leftsum, leftsum+leftcnt, std::greater<int>());
-  std::sort(rightsum, rightsum+rightcnt, std::greater<int>());
-
-  int i = 1, j = 1;
-  int leftcur = leftcnt, rightcur = rightcnt;
-  while(leftcur ) {
-    if (leftsum[i] > rightsum[j]) {
-      if (m <= rightcur) { std::cout << allsum - (leftsum[i]+rightsum[j+m-1]); return 0; }
-      else { leftcur--; m -= rightcur; ++i; }
-    } else if (leftsum[i] < rightsum[j]) {
-      if (m <= leftcur) { std::cout << allsum - (leftsum[i+m-1]+rightsum[j]); return 0; }
-      else { rightcur--; m -= leftcur; ++j; }
-    } else {
-      int ii = i+1, jj = j+1;
-      while(ii <= leftcnt && jj <= rightcnt) {
-        if (leftsum[ii] < rightsum[jj]) { ++jj; }
-        else if ()
-
-      }
-    }
+    l.push_back(l[l.size()-1]+arr[i]);
   }
+  for(int i = n, j = 1; i > k; --i, ++j) {
+    r.push_back(r[r.size()-1]+arr[i]);
+  }
+  std::sort(l.begin(), l.end());
+  std::sort(r.begin(), r.end());
+  long long fl = -1e16, fr = 1e16;
+  while (fl < fr-1) {
+    const long long mid = fl + ((fr-fl) >> 1);
+    // std::cout << " f(" << mid << "): " << f(mid); NL;
+    if (f(mid) < m) { fl = mid; }
+    else { fr = mid; }
+  }
+  std::cout << fl;
 
   return 0;
 }
