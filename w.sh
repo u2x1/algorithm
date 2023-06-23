@@ -28,7 +28,7 @@ function judge {
   printf "Judging...\n"
 
   if [ ! $flag -eq -120 ] ; then
-    processOut=$(timeout 5 bash -c "cat $inFile | ./zout")
+    processOut=$(timeout 1 bash -c "cat $inFile | ./zout")
     flag=$?
   fi
 
@@ -81,13 +81,11 @@ function op {
 function f {
   if [ ! -f $sourceFile ]; then
   cat > $sourceFile <<EOF
-#include <iostream>
+#include <bits/stdc++.h>
 
+#define all(x)      x.begin(), x.end()
 #define orep(i,l,r) for(auto i = (l); i < (r); ++i)
 #define NL          std::cout << '\n'
-
-const int maxN = 2e5+5;
-int arr[maxN];
 
 signed main() {
   std::ios::sync_with_stdio(0); std::cin.tie(0);
@@ -99,14 +97,13 @@ EOF
 
   flag=0
   vim $sourceFile
-  g++ -O0 -g -fsanitize=address -Wall -Wextra -Wshadow -o zout -Wall $sourceFile
+  g++ -O2 -g -fsanitize=address -Wall -Wextra -Wshadow -o zout -Wall $sourceFile
   if [ ! $? -eq 0 ] ; then
     flag=-120
   fi
 
   if [ ! -f $inFile ]; then
-    printf "\n==================================================\n\n"
-    ./zout
+    op
   else
     judge
   fi

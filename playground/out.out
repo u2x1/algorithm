@@ -1,0 +1,995 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00       12     0.00     0.00  long long&& std::forward<long long>(std::remove_reference<long long>::type&)
+  0.00      0.00     0.00        9     0.00     0.00  std::allocator<long long>::~allocator()
+  0.00      0.00     0.00        9     0.00     0.00  std::__new_allocator<long long>::~__new_allocator()
+  0.00      0.00     0.00        8     0.00     0.00  std::_Vector_base<long long, std::allocator<long long> >::_M_get_Tp_allocator()
+  0.00      0.00     0.00        8     0.00     0.00  std::vector<Node, std::allocator<Node> >::operator[](unsigned long)
+  0.00      0.00     0.00        7     0.00     0.00  std::vector<long long, std::allocator<long long> >::operator[](unsigned long)
+  0.00      0.00     0.00        6     0.00     0.00  std::allocator<Node>::~allocator()
+  0.00      0.00     0.00        6     0.00     0.00  std::allocator<long long>::allocator(std::allocator<long long> const&)
+  0.00      0.00     0.00        6     0.00     0.00  std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data::_M_copy_data(std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data const&)
+  0.00      0.00     0.00        6     0.00     0.00  std::_Vector_base<Node, std::allocator<Node> >::_M_get_Tp_allocator()
+  0.00      0.00     0.00        6     0.00     0.00  std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data::_M_copy_data(std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data const&)
+  0.00      0.00     0.00        6     0.00     0.00  std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data::_Vector_impl_data()
+  0.00      0.00     0.00        6     0.00     0.00  std::__new_allocator<Node>::~__new_allocator()
+  0.00      0.00     0.00        6     0.00     0.00  std::__new_allocator<long long>::__new_allocator(std::__new_allocator<long long> const&)
+  0.00      0.00     0.00        5     0.00     0.00  std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data::_Vector_impl_data()
+  0.00      0.00     0.00        4     0.00     0.00  std::__new_allocator<long long>::_M_max_size() const
+  0.00      0.00     0.00        4     0.00     0.00  std::allocator<Node>::allocator(std::allocator<Node> const&)
+  0.00      0.00     0.00        4     0.00     0.00  void std::_Destroy_aux<true>::__destroy<long long*>(long long*, long long*)
+  0.00      0.00     0.00        4     0.00     0.00  std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl::~_Vector_impl()
+  0.00      0.00     0.00        4     0.00     0.00  std::_Vector_base<long long, std::allocator<long long> >::_M_deallocate(long long*, unsigned long)
+  0.00      0.00     0.00        4     0.00     0.00  std::_Vector_base<long long, std::allocator<long long> >::~_Vector_base()
+  0.00      0.00     0.00        4     0.00     0.00  std::__new_allocator<Node>::__new_allocator(std::__new_allocator<Node> const&)
+  0.00      0.00     0.00        4     0.00     0.00  std::vector<long long, std::allocator<long long> >::~vector()
+  0.00      0.00     0.00        4     0.00     0.00  void std::_Destroy<long long*>(long long*, long long*)
+  0.00      0.00     0.00        4     0.00     0.00  void std::_Destroy<long long*, long long>(long long*, long long*, std::allocator<long long>&)
+  0.00      0.00     0.00        3     0.00     0.00  std::allocator<long long>::allocator()
+  0.00      0.00     0.00        3     0.00     0.00  void std::_Destroy_aux<true>::__destroy<Node*>(Node*, Node*)
+  0.00      0.00     0.00        3     0.00     0.00  std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl::~_Vector_impl()
+  0.00      0.00     0.00        3     0.00     0.00  std::_Vector_base<Node, std::allocator<Node> >::_M_deallocate(Node*, unsigned long)
+  0.00      0.00     0.00        3     0.00     0.00  std::_Vector_base<Node, std::allocator<Node> >::~_Vector_base()
+  0.00      0.00     0.00        3     0.00     0.00  std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl::_Vector_impl(std::allocator<long long> const&)
+  0.00      0.00     0.00        3     0.00     0.00  std::__new_allocator<long long>::__new_allocator()
+  0.00      0.00     0.00        3     0.00     0.00  std::vector<Node, std::allocator<Node> >::~vector()
+  0.00      0.00     0.00        3     0.00     0.00  std::__size_to_integer(unsigned long)
+  0.00      0.00     0.00        3     0.00     0.00  unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      0.00     0.00        3     0.00     0.00  SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&& std::forward<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(std::remove_reference<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::type&)
+  0.00      0.00     0.00        3     0.00     0.00  void std::_Destroy<Node*>(Node*, Node*)
+  0.00      0.00     0.00        3     0.00     0.00  void std::_Destroy<Node*, Node>(Node*, Node*, std::allocator<Node>&)
+  0.00      0.00     0.00        3     0.00     0.00  operator new(unsigned long, void*)
+  0.00      0.00     0.00        2     0.00     0.00  SegTree::apply(long long, long long)
+  0.00      0.00     0.00        2     0.00     0.00  std::__new_allocator<Node>::_M_max_size() const
+  0.00      0.00     0.00        2     0.00     0.00  std::__new_allocator<long long>::max_size() const
+  0.00      0.00     0.00        2     0.00     0.00  std::allocator<Node>::allocator()
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl::_Vector_impl(std::allocator<Node> const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data::_M_swap_data(std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data&)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<long long, std::allocator<long long> >::_M_allocate(unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<long long, std::allocator<long long> >::_M_create_storage(unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data::_M_swap_data(std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data&)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<long long, std::allocator<long long> >::_Vector_base(unsigned long, std::allocator<long long> const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::__new_allocator<Node>::__new_allocator()
+  0.00      0.00     0.00        2     0.00     0.00  std::__new_allocator<long long>::deallocate(long long*, unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  std::__new_allocator<long long>::allocate(unsigned long, void const*)
+  0.00      0.00     0.00        2     0.00     0.00  std::allocator_traits<std::allocator<long long> >::deallocate(std::allocator<long long>&, long long*, unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  std::allocator_traits<std::allocator<long long> >::allocate(std::allocator<long long>&, unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  std::allocator_traits<std::allocator<long long> >::max_size(std::allocator<long long> const&)
+  0.00      0.00     0.00        2     0.00     0.00  long long* std::__uninitialized_default_n_1<true>::__uninit_default_n<long long*, unsigned long>(long long*, unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<long long, std::allocator<long long> >::_S_max_size(std::allocator<long long> const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<long long, std::allocator<long long> >::_S_check_init_len(unsigned long, std::allocator<long long> const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<long long, std::allocator<long long> >::_M_default_initialize(unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<long long, std::allocator<long long> >::vector(unsigned long, std::allocator<long long> const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Any_data::_M_access()
+  0.00      0.00     0.00        2     0.00     0.00  SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}*& std::_Any_data::_M_access<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}*>()
+  0.00      0.00     0.00        2     0.00     0.00  void std::_Construct<long long>(long long*)
+  0.00      0.00     0.00        2     0.00     0.00  long long* std::__fill_n_a<long long*, unsigned long, long long>(long long*, unsigned long, long long const&, std::random_access_iterator_tag)
+  0.00      0.00     0.00        2     0.00     0.00  long long* std::__addressof<long long>(long long&)
+  0.00      0.00     0.00        2     0.00     0.00  std::iterator_traits<long long*>::iterator_category std::__iterator_category<long long*>(long long* const&)
+  0.00      0.00     0.00        2     0.00     0.00  long long* std::__uninitialized_default_n<long long*, unsigned long>(long long*, unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  long long* std::__uninitialized_default_n_a<long long*, unsigned long, long long>(long long*, unsigned long, std::allocator<long long>&)
+  0.00      0.00     0.00        2     0.00     0.00  long long* std::fill_n<long long*, unsigned long, long long>(long long*, unsigned long, long long const&)
+  0.00      0.00     0.00        2     0.00     0.00  SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}& std::forward<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&>(std::remove_reference<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&>::type&)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  SegTree::sum(long long, long long)
+  0.00      0.00     0.00        1     0.00     0.00  SegTree::_sum(long long, long long, long long, long long, long long)
+  0.00      0.00     0.00        1     0.00     0.00  SegTree::pushdn(long long)
+  0.00      0.00     0.00        1     0.00     0.00  SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)
+  0.00      0.00     0.00        1     0.00     0.00  SegTree::~SegTree()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<Node, std::allocator<Node> >::get_allocator() const
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<Node, std::allocator<Node> >::_M_get_Tp_allocator() const
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<long long, std::allocator<long long> >::get_allocator() const
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<long long, std::allocator<long long> >::_M_get_Tp_allocator() const
+  0.00      0.00     0.00        1     0.00     0.00  std::_Function_base::_M_empty() const
+  0.00      0.00     0.00        1     0.00     0.00  std::__new_allocator<Node>::max_size() const
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<long long, std::allocator<long long> >::size() const
+  0.00      0.00     0.00        1     0.00     0.00  std::function<void (long long, long long, long long)>::operator()(long long, long long, long long) const
+  0.00      0.00     0.00        1     0.00     0.00  std::_Any_data::_M_access() const
+  0.00      0.00     0.00        1     0.00     0.00  SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}* const& std::_Any_data::_M_access<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}*>() const
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<Node, std::allocator<Node> >::_M_allocate(unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl::_Vector_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<Node, std::allocator<Node> >::_M_create_storage(unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<Node, std::allocator<Node> >::_Vector_base(unsigned long, std::allocator<Node> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<Node, std::allocator<Node> >::_Vector_base(std::allocator<Node> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<Node, std::allocator<Node> >::_Vector_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl::_Vector_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<long long, std::allocator<long long> >::_Vector_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<long long, std::allocator<long long> >::_Vector_base(std::allocator<long long> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_destroy(std::_Any_data&, std::integral_constant<bool, false>)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_get_pointer(std::_Any_data const&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_init_functor<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(std::_Any_data&, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&)
+  0.00      0.00     0.00        1     0.00     0.00  bool std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_not_empty_function<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1} const&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_create<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(std::_Any_data&, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&, std::integral_constant<bool, false>)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Function_base::_Function_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Function_base::~_Function_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::__new_allocator<Node>::deallocate(Node*, unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  std::__new_allocator<Node>::allocate(unsigned long, void const*)
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<Node> >::deallocate(std::allocator<Node>&, Node*, unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<Node> >::allocate(std::allocator<Node>&, unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<Node> >::max_size(std::allocator<Node> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Function_handler<void (long long, long long, long long), SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Function_handler<void (long long, long long, long long), SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_invoke(std::_Any_data const&, long long&&, long long&&, long long&&)
+  0.00      0.00     0.00        1     0.00     0.00  Node* std::__uninitialized_default_n_1<true>::__uninit_default_n<Node*, unsigned long>(Node*, unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<Node, std::allocator<Node> >::_S_max_size(std::allocator<Node> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<Node, std::allocator<Node> >::_M_move_assign(std::vector<Node, std::allocator<Node> >&&, std::integral_constant<bool, true>)
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<Node, std::allocator<Node> >::_S_check_init_len(unsigned long, std::allocator<Node> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<Node, std::allocator<Node> >::_M_default_initialize(unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<Node, std::allocator<Node> >::vector(std::allocator<Node> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<Node, std::allocator<Node> >::vector(unsigned long, std::allocator<Node> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<Node, std::allocator<Node> >::vector()
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<Node, std::allocator<Node> >::operator=(std::vector<Node, std::allocator<Node> >&&)
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<long long, std::allocator<long long> >::_M_move_assign(std::vector<long long, std::allocator<long long> >&&, std::integral_constant<bool, true>)
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<long long, std::allocator<long long> >::vector(std::allocator<long long> const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<long long, std::allocator<long long> >::vector()
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<long long, std::allocator<long long> >::operator=(std::vector<long long, std::allocator<long long> >&&)
+  0.00      0.00     0.00        1     0.00     0.00  std::function<void (long long, long long, long long)>::function<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}, void>(SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&)
+  0.00      0.00     0.00        1     0.00     0.00  std::function<void (long long, long long, long long)>::~function()
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Construct<Node>(Node*)
+  0.00      0.00     0.00        1     0.00     0.00  Node* std::__fill_n_a<Node*, unsigned long, Node>(Node*, unsigned long, Node const&, std::random_access_iterator_tag)
+  0.00      0.00     0.00        1     0.00     0.00  std::enable_if<is_invocable_r_v<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>, void>::type std::__invoke_r<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>(SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long&&, long long&&, long long&&)
+  0.00      0.00     0.00        1     0.00     0.00  Node* std::__addressof<Node>(Node&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::__invoke_impl<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>(std::__invoke_other, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long&&, long long&&, long long&&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::__alloc_on_move<std::allocator<Node> >(std::allocator<Node>&, std::allocator<Node>&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::__alloc_on_move<std::allocator<long long> >(std::allocator<long long>&, std::allocator<long long>&)
+  0.00      0.00     0.00        1     0.00     0.00  std::iterator_traits<Node*>::iterator_category std::__iterator_category<Node*>(Node* const&)
+  0.00      0.00     0.00        1     0.00     0.00  Node* std::__uninitialized_default_n<Node*, unsigned long>(Node*, unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  Node* std::__uninitialized_default_n_a<Node*, unsigned long, Node>(Node*, unsigned long, std::allocator<Node>&)
+  0.00      0.00     0.00        1     0.00     0.00  std::remove_reference<std::allocator<Node>&>::type&& std::move<std::allocator<Node>&>(std::allocator<Node>&)
+  0.00      0.00     0.00        1     0.00     0.00  std::remove_reference<std::allocator<long long>&>::type&& std::move<std::allocator<long long>&>(std::allocator<long long>&)
+  0.00      0.00     0.00        1     0.00     0.00  std::remove_reference<std::vector<Node, std::allocator<Node> >&>::type&& std::move<std::vector<Node, std::allocator<Node> >&>(std::vector<Node, std::allocator<Node> >&)
+  0.00      0.00     0.00        1     0.00     0.00  std::remove_reference<std::vector<long long, std::allocator<long long> >&>::type&& std::move<std::vector<long long, std::allocator<long long> >&>(std::vector<long long, std::allocator<long long> >&)
+  0.00      0.00     0.00        1     0.00     0.00  Node* std::fill_n<Node*, unsigned long, Node>(Node*, unsigned long, Node const&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::__fill_a<Node*, Node>(Node*, Node*, Node const&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::__fill_a<long long*, long long>(long long*, long long*, long long const&)
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::__enable_if<!std::__is_scalar<Node>::__value, void>::__type std::__fill_a1<Node*, Node>(Node*, Node*, Node const&)
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::__enable_if<std::__is_scalar<long long>::__value, void>::__type std::__fill_a1<long long*, long long>(long long*, long long*, long long const&)
+  0.00      0.00     0.00        1     0.00     0.00  SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}::operator()(long long, long long, long long) const
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2023 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) no time propagated
+
+index % time    self  children    called     name
+                0.00    0.00       3/12          std::function<void (long long, long long, long long)>::operator()(long long, long long, long long) const [91]
+                0.00    0.00       3/12          std::_Function_handler<void (long long, long long, long long), SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_invoke(std::_Any_data const&, long long&&, long long&&, long long&&) [117]
+                0.00    0.00       3/12          std::enable_if<is_invocable_r_v<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>, void>::type std::__invoke_r<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>(SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long&&, long long&&, long long&&) [135]
+                0.00    0.00       3/12          void std::__invoke_impl<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>(std::__invoke_other, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long&&, long long&&, long long&&) [137]
+[8]      0.0    0.00    0.00      12         long long&& std::forward<long long>(std::remove_reference<long long>::type&) [8]
+-----------------------------------------------
+                0.00    0.00       1/9           main [6]
+                0.00    0.00       1/9           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&) [82]
+                0.00    0.00       1/9           std::vector<long long, std::allocator<long long> >::_M_move_assign(std::vector<long long, std::allocator<long long> >&&, std::integral_constant<bool, true>) [127]
+                0.00    0.00       2/9           std::vector<long long, std::allocator<long long> >::_S_check_init_len(unsigned long, std::allocator<long long> const&) [65]
+                0.00    0.00       4/9           std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl::~_Vector_impl() [26]
+[9]      0.0    0.00    0.00       9         std::allocator<long long>::~allocator() [9]
+                0.00    0.00       9/9           std::__new_allocator<long long>::~__new_allocator() [10]
+-----------------------------------------------
+                0.00    0.00       9/9           std::allocator<long long>::~allocator() [9]
+[10]     0.0    0.00    0.00       9         std::__new_allocator<long long>::~__new_allocator() [10]
+-----------------------------------------------
+                0.00    0.00       2/8           std::vector<long long, std::allocator<long long> >::_M_default_initialize(unsigned long) [66]
+                0.00    0.00       2/8           std::vector<long long, std::allocator<long long> >::_M_move_assign(std::vector<long long, std::allocator<long long> >&&, std::integral_constant<bool, true>) [127]
+                0.00    0.00       4/8           std::vector<long long, std::allocator<long long> >::~vector() [30]
+[11]     0.0    0.00    0.00       8         std::_Vector_base<long long, std::allocator<long long> >::_M_get_Tp_allocator() [11]
+-----------------------------------------------
+                0.00    0.00       2/8           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}::operator()(long long, long long, long long) const [152]
+                0.00    0.00       6/8           SegTree::apply(long long, long long) [47]
+[12]     0.0    0.00    0.00       8         std::vector<Node, std::allocator<Node> >::operator[](unsigned long) [12]
+-----------------------------------------------
+                0.00    0.00       1/7           main [6]
+                0.00    0.00       1/7           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}::operator()(long long, long long, long long) const [152]
+                0.00    0.00       2/7           SegTree::apply(long long, long long) [47]
+                0.00    0.00       3/7           SegTree::pushdn(long long) [81]
+[13]     0.0    0.00    0.00       7         std::vector<long long, std::allocator<long long> >::operator[](unsigned long) [13]
+-----------------------------------------------
+                0.00    0.00       1/6           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&) [82]
+                0.00    0.00       1/6           std::vector<Node, std::allocator<Node> >::_S_check_init_len(unsigned long, std::allocator<Node> const&) [121]
+                0.00    0.00       1/6           std::vector<Node, std::allocator<Node> >::_M_move_assign(std::vector<Node, std::allocator<Node> >&&, std::integral_constant<bool, true>) [120]
+                0.00    0.00       3/6           std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl::~_Vector_impl() [35]
+[14]     0.0    0.00    0.00       6         std::allocator<Node>::~allocator() [14]
+                0.00    0.00       6/6           std::__new_allocator<Node>::~__new_allocator() [20]
+-----------------------------------------------
+                0.00    0.00       1/6           std::_Vector_base<long long, std::allocator<long long> >::get_allocator() const [86]
+                0.00    0.00       2/6           std::vector<long long, std::allocator<long long> >::_S_check_init_len(unsigned long, std::allocator<long long> const&) [65]
+                0.00    0.00       3/6           std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl::_Vector_impl(std::allocator<long long> const&) [38]
+[15]     0.0    0.00    0.00       6         std::allocator<long long>::allocator(std::allocator<long long> const&) [15]
+                0.00    0.00       6/6           std::__new_allocator<long long>::__new_allocator(std::__new_allocator<long long> const&) [21]
+-----------------------------------------------
+                0.00    0.00       6/6           std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data::_M_swap_data(std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data&) [52]
+[16]     0.0    0.00    0.00       6         std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data::_M_copy_data(std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data const&) [16]
+-----------------------------------------------
+                0.00    0.00       1/6           std::vector<Node, std::allocator<Node> >::_M_default_initialize(unsigned long) [122]
+                0.00    0.00       2/6           std::vector<Node, std::allocator<Node> >::_M_move_assign(std::vector<Node, std::allocator<Node> >&&, std::integral_constant<bool, true>) [120]
+                0.00    0.00       3/6           std::vector<Node, std::allocator<Node> >::~vector() [40]
+[17]     0.0    0.00    0.00       6         std::_Vector_base<Node, std::allocator<Node> >::_M_get_Tp_allocator() [17]
+-----------------------------------------------
+                0.00    0.00       6/6           std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data::_M_swap_data(std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data&) [55]
+[18]     0.0    0.00    0.00       6         std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data::_M_copy_data(std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data const&) [18]
+-----------------------------------------------
+                0.00    0.00       1/6           std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl::_Vector_impl() [100]
+                0.00    0.00       2/6           std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data::_M_swap_data(std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data&) [55]
+                0.00    0.00       3/6           std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl::_Vector_impl(std::allocator<long long> const&) [38]
+[19]     0.0    0.00    0.00       6         std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data::_Vector_impl_data() [19]
+-----------------------------------------------
+                0.00    0.00       6/6           std::allocator<Node>::~allocator() [14]
+[20]     0.0    0.00    0.00       6         std::__new_allocator<Node>::~__new_allocator() [20]
+-----------------------------------------------
+                0.00    0.00       6/6           std::allocator<long long>::allocator(std::allocator<long long> const&) [15]
+[21]     0.0    0.00    0.00       6         std::__new_allocator<long long>::__new_allocator(std::__new_allocator<long long> const&) [21]
+-----------------------------------------------
+                0.00    0.00       1/5           std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl::_Vector_impl() [95]
+                0.00    0.00       2/5           std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl::_Vector_impl(std::allocator<Node> const&) [51]
+                0.00    0.00       2/5           std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data::_M_swap_data(std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data&) [52]
+[22]     0.0    0.00    0.00       5         std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data::_Vector_impl_data() [22]
+-----------------------------------------------
+                0.00    0.00       2/4           std::__new_allocator<long long>::max_size() const [49]
+                0.00    0.00       2/4           std::__new_allocator<long long>::allocate(unsigned long, void const*) [59]
+[23]     0.0    0.00    0.00       4         std::__new_allocator<long long>::_M_max_size() const [23]
+-----------------------------------------------
+                0.00    0.00       1/4           std::vector<Node, std::allocator<Node> >::_S_check_init_len(unsigned long, std::allocator<Node> const&) [121]
+                0.00    0.00       1/4           std::_Vector_base<Node, std::allocator<Node> >::get_allocator() const [84]
+                0.00    0.00       2/4           std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl::_Vector_impl(std::allocator<Node> const&) [51]
+[24]     0.0    0.00    0.00       4         std::allocator<Node>::allocator(std::allocator<Node> const&) [24]
+                0.00    0.00       4/4           std::__new_allocator<Node>::__new_allocator(std::__new_allocator<Node> const&) [29]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::_Destroy<long long*>(long long*, long long*) [31]
+[25]     0.0    0.00    0.00       4         void std::_Destroy_aux<true>::__destroy<long long*>(long long*, long long*) [25]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Vector_base<long long, std::allocator<long long> >::~_Vector_base() [28]
+[26]     0.0    0.00    0.00       4         std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl::~_Vector_impl() [26]
+                0.00    0.00       4/9           std::allocator<long long>::~allocator() [9]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Vector_base<long long, std::allocator<long long> >::~_Vector_base() [28]
+[27]     0.0    0.00    0.00       4         std::_Vector_base<long long, std::allocator<long long> >::_M_deallocate(long long*, unsigned long) [27]
+                0.00    0.00       2/2           std::allocator_traits<std::allocator<long long> >::deallocate(std::allocator<long long>&, long long*, unsigned long) [60]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<long long, std::allocator<long long> >::~vector() [30]
+[28]     0.0    0.00    0.00       4         std::_Vector_base<long long, std::allocator<long long> >::~_Vector_base() [28]
+                0.00    0.00       4/4           std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl::~_Vector_impl() [26]
+                0.00    0.00       4/4           std::_Vector_base<long long, std::allocator<long long> >::_M_deallocate(long long*, unsigned long) [27]
+-----------------------------------------------
+                0.00    0.00       4/4           std::allocator<Node>::allocator(std::allocator<Node> const&) [24]
+[29]     0.0    0.00    0.00       4         std::__new_allocator<Node>::__new_allocator(std::__new_allocator<Node> const&) [29]
+-----------------------------------------------
+                0.00    0.00       1/4           main [6]
+                0.00    0.00       1/4           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&) [82]
+                0.00    0.00       1/4           SegTree::~SegTree() [83]
+                0.00    0.00       1/4           std::vector<long long, std::allocator<long long> >::_M_move_assign(std::vector<long long, std::allocator<long long> >&&, std::integral_constant<bool, true>) [127]
+[30]     0.0    0.00    0.00       4         std::vector<long long, std::allocator<long long> >::~vector() [30]
+                0.00    0.00       4/8           std::_Vector_base<long long, std::allocator<long long> >::_M_get_Tp_allocator() [11]
+                0.00    0.00       4/4           void std::_Destroy<long long*, long long>(long long*, long long*, std::allocator<long long>&) [32]
+                0.00    0.00       4/4           std::_Vector_base<long long, std::allocator<long long> >::~_Vector_base() [28]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::_Destroy<long long*, long long>(long long*, long long*, std::allocator<long long>&) [32]
+[31]     0.0    0.00    0.00       4         void std::_Destroy<long long*>(long long*, long long*) [31]
+                0.00    0.00       4/4           void std::_Destroy_aux<true>::__destroy<long long*>(long long*, long long*) [25]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<long long, std::allocator<long long> >::~vector() [30]
+[32]     0.0    0.00    0.00       4         void std::_Destroy<long long*, long long>(long long*, long long*, std::allocator<long long>&) [32]
+                0.00    0.00       4/4           void std::_Destroy<long long*>(long long*, long long*) [31]
+-----------------------------------------------
+                0.00    0.00       1/3           main [6]
+                0.00    0.00       1/3           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&) [82]
+                0.00    0.00       1/3           std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl::_Vector_impl() [100]
+[33]     0.0    0.00    0.00       3         std::allocator<long long>::allocator() [33]
+                0.00    0.00       3/3           std::__new_allocator<long long>::__new_allocator() [39]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::_Destroy<Node*>(Node*, Node*) [44]
+[34]     0.0    0.00    0.00       3         void std::_Destroy_aux<true>::__destroy<Node*>(Node*, Node*) [34]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<Node, std::allocator<Node> >::~_Vector_base() [37]
+[35]     0.0    0.00    0.00       3         std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl::~_Vector_impl() [35]
+                0.00    0.00       3/6           std::allocator<Node>::~allocator() [14]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<Node, std::allocator<Node> >::~_Vector_base() [37]
+[36]     0.0    0.00    0.00       3         std::_Vector_base<Node, std::allocator<Node> >::_M_deallocate(Node*, unsigned long) [36]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<Node> >::deallocate(std::allocator<Node>&, Node*, unsigned long) [113]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<Node, std::allocator<Node> >::~vector() [40]
+[37]     0.0    0.00    0.00       3         std::_Vector_base<Node, std::allocator<Node> >::~_Vector_base() [37]
+                0.00    0.00       3/3           std::_Vector_base<Node, std::allocator<Node> >::_M_deallocate(Node*, unsigned long) [36]
+                0.00    0.00       3/3           std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl::~_Vector_impl() [35]
+-----------------------------------------------
+                0.00    0.00       1/3           std::_Vector_base<long long, std::allocator<long long> >::_Vector_base(std::allocator<long long> const&) [102]
+                0.00    0.00       2/3           std::_Vector_base<long long, std::allocator<long long> >::_Vector_base(unsigned long, std::allocator<long long> const&) [56]
+[38]     0.0    0.00    0.00       3         std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl::_Vector_impl(std::allocator<long long> const&) [38]
+                0.00    0.00       3/6           std::allocator<long long>::allocator(std::allocator<long long> const&) [15]
+                0.00    0.00       3/6           std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data::_Vector_impl_data() [19]
+-----------------------------------------------
+                0.00    0.00       3/3           std::allocator<long long>::allocator() [33]
+[39]     0.0    0.00    0.00       3         std::__new_allocator<long long>::__new_allocator() [39]
+-----------------------------------------------
+                0.00    0.00       1/3           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&) [82]
+                0.00    0.00       1/3           SegTree::~SegTree() [83]
+                0.00    0.00       1/3           std::vector<Node, std::allocator<Node> >::_M_move_assign(std::vector<Node, std::allocator<Node> >&&, std::integral_constant<bool, true>) [120]
+[40]     0.0    0.00    0.00       3         std::vector<Node, std::allocator<Node> >::~vector() [40]
+                0.00    0.00       3/6           std::_Vector_base<Node, std::allocator<Node> >::_M_get_Tp_allocator() [17]
+                0.00    0.00       3/3           std::_Vector_base<Node, std::allocator<Node> >::~_Vector_base() [37]
+                0.00    0.00       3/3           void std::_Destroy<Node*, Node>(Node*, Node*, std::allocator<Node>&) [45]
+-----------------------------------------------
+                0.00    0.00       1/3           Node* std::fill_n<Node*, unsigned long, Node>(Node*, unsigned long, Node const&) [147]
+                0.00    0.00       2/3           long long* std::fill_n<long long*, unsigned long, long long>(long long*, unsigned long, long long const&) [76]
+[41]     0.0    0.00    0.00       3         std::__size_to_integer(unsigned long) [41]
+-----------------------------------------------
+                0.00    0.00       1/3           std::vector<Node, std::allocator<Node> >::_S_max_size(std::allocator<Node> const&) [119]
+                0.00    0.00       2/3           std::vector<long long, std::allocator<long long> >::_S_max_size(std::allocator<long long> const&) [64]
+[42]     0.0    0.00    0.00       3         unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [42]
+-----------------------------------------------
+                0.00    0.00       1/3           std::function<void (long long, long long, long long)>::function<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}, void>(SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&) [131]
+                0.00    0.00       1/3           void std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_init_functor<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(std::_Any_data&, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&) [106]
+                0.00    0.00       1/3           void std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_create<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(std::_Any_data&, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&, std::integral_constant<bool, false>) [108]
+[43]     0.0    0.00    0.00       3         SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&& std::forward<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(std::remove_reference<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::type&) [43]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::_Destroy<Node*, Node>(Node*, Node*, std::allocator<Node>&) [45]
+[44]     0.0    0.00    0.00       3         void std::_Destroy<Node*>(Node*, Node*) [44]
+                0.00    0.00       3/3           void std::_Destroy_aux<true>::__destroy<Node*>(Node*, Node*) [34]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<Node, std::allocator<Node> >::~vector() [40]
+[45]     0.0    0.00    0.00       3         void std::_Destroy<Node*, Node>(Node*, Node*, std::allocator<Node>&) [45]
+                0.00    0.00       3/3           void std::_Destroy<Node*>(Node*, Node*) [44]
+-----------------------------------------------
+                0.00    0.00       1/3           void std::_Construct<Node>(Node*) [133]
+                0.00    0.00       2/3           void std::_Construct<long long>(long long*) [70]
+[46]     0.0    0.00    0.00       3         operator new(unsigned long, void*) [46]
+-----------------------------------------------
+                0.00    0.00       2/2           SegTree::pushdn(long long) [81]
+[47]     0.0    0.00    0.00       2         SegTree::apply(long long, long long) [47]
+                0.00    0.00       6/8           std::vector<Node, std::allocator<Node> >::operator[](unsigned long) [12]
+                0.00    0.00       2/7           std::vector<long long, std::allocator<long long> >::operator[](unsigned long) [13]
+-----------------------------------------------
+                0.00    0.00       1/2           std::__new_allocator<Node>::max_size() const [89]
+                0.00    0.00       1/2           std::__new_allocator<Node>::allocate(unsigned long, void const*) [112]
+[48]     0.0    0.00    0.00       2         std::__new_allocator<Node>::_M_max_size() const [48]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator_traits<std::allocator<long long> >::max_size(std::allocator<long long> const&) [62]
+[49]     0.0    0.00    0.00       2         std::__new_allocator<long long>::max_size() const [49]
+                0.00    0.00       2/4           std::__new_allocator<long long>::_M_max_size() const [23]
+-----------------------------------------------
+                0.00    0.00       1/2           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&) [82]
+                0.00    0.00       1/2           std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl::_Vector_impl() [95]
+[50]     0.0    0.00    0.00       2         std::allocator<Node>::allocator() [50]
+                0.00    0.00       2/2           std::__new_allocator<Node>::__new_allocator() [57]
+-----------------------------------------------
+                0.00    0.00       1/2           std::_Vector_base<Node, std::allocator<Node> >::_Vector_base(unsigned long, std::allocator<Node> const&) [97]
+                0.00    0.00       1/2           std::_Vector_base<Node, std::allocator<Node> >::_Vector_base(std::allocator<Node> const&) [98]
+[51]     0.0    0.00    0.00       2         std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl::_Vector_impl(std::allocator<Node> const&) [51]
+                0.00    0.00       2/4           std::allocator<Node>::allocator(std::allocator<Node> const&) [24]
+                0.00    0.00       2/5           std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data::_Vector_impl_data() [22]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<Node, std::allocator<Node> >::_M_move_assign(std::vector<Node, std::allocator<Node> >&&, std::integral_constant<bool, true>) [120]
+[52]     0.0    0.00    0.00       2         std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data::_M_swap_data(std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data&) [52]
+                0.00    0.00       6/6           std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data::_M_copy_data(std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data const&) [16]
+                0.00    0.00       2/5           std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data::_Vector_impl_data() [22]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<long long, std::allocator<long long> >::_M_create_storage(unsigned long) [54]
+[53]     0.0    0.00    0.00       2         std::_Vector_base<long long, std::allocator<long long> >::_M_allocate(unsigned long) [53]
+                0.00    0.00       2/2           std::allocator_traits<std::allocator<long long> >::allocate(std::allocator<long long>&, unsigned long) [61]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<long long, std::allocator<long long> >::_Vector_base(unsigned long, std::allocator<long long> const&) [56]
+[54]     0.0    0.00    0.00       2         std::_Vector_base<long long, std::allocator<long long> >::_M_create_storage(unsigned long) [54]
+                0.00    0.00       2/2           std::_Vector_base<long long, std::allocator<long long> >::_M_allocate(unsigned long) [53]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<long long, std::allocator<long long> >::_M_move_assign(std::vector<long long, std::allocator<long long> >&&, std::integral_constant<bool, true>) [127]
+[55]     0.0    0.00    0.00       2         std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data::_M_swap_data(std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data&) [55]
+                0.00    0.00       6/6           std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data::_M_copy_data(std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data const&) [18]
+                0.00    0.00       2/6           std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data::_Vector_impl_data() [19]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<long long, std::allocator<long long> >::vector(unsigned long, std::allocator<long long> const&) [67]
+[56]     0.0    0.00    0.00       2         std::_Vector_base<long long, std::allocator<long long> >::_Vector_base(unsigned long, std::allocator<long long> const&) [56]
+                0.00    0.00       2/3           std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl::_Vector_impl(std::allocator<long long> const&) [38]
+                0.00    0.00       2/2           std::_Vector_base<long long, std::allocator<long long> >::_M_create_storage(unsigned long) [54]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator<Node>::allocator() [50]
+[57]     0.0    0.00    0.00       2         std::__new_allocator<Node>::__new_allocator() [57]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator_traits<std::allocator<long long> >::deallocate(std::allocator<long long>&, long long*, unsigned long) [60]
+[58]     0.0    0.00    0.00       2         std::__new_allocator<long long>::deallocate(long long*, unsigned long) [58]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator_traits<std::allocator<long long> >::allocate(std::allocator<long long>&, unsigned long) [61]
+[59]     0.0    0.00    0.00       2         std::__new_allocator<long long>::allocate(unsigned long, void const*) [59]
+                0.00    0.00       2/4           std::__new_allocator<long long>::_M_max_size() const [23]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<long long, std::allocator<long long> >::_M_deallocate(long long*, unsigned long) [27]
+[60]     0.0    0.00    0.00       2         std::allocator_traits<std::allocator<long long> >::deallocate(std::allocator<long long>&, long long*, unsigned long) [60]
+                0.00    0.00       2/2           std::__new_allocator<long long>::deallocate(long long*, unsigned long) [58]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<long long, std::allocator<long long> >::_M_allocate(unsigned long) [53]
+[61]     0.0    0.00    0.00       2         std::allocator_traits<std::allocator<long long> >::allocate(std::allocator<long long>&, unsigned long) [61]
+                0.00    0.00       2/2           std::__new_allocator<long long>::allocate(unsigned long, void const*) [59]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<long long, std::allocator<long long> >::_S_max_size(std::allocator<long long> const&) [64]
+[62]     0.0    0.00    0.00       2         std::allocator_traits<std::allocator<long long> >::max_size(std::allocator<long long> const&) [62]
+                0.00    0.00       2/2           std::__new_allocator<long long>::max_size() const [49]
+-----------------------------------------------
+                0.00    0.00       2/2           long long* std::__uninitialized_default_n<long long*, unsigned long>(long long*, unsigned long) [74]
+[63]     0.0    0.00    0.00       2         long long* std::__uninitialized_default_n_1<true>::__uninit_default_n<long long*, unsigned long>(long long*, unsigned long) [63]
+                0.00    0.00       2/2           long long* std::__addressof<long long>(long long&) [72]
+                0.00    0.00       2/2           void std::_Construct<long long>(long long*) [70]
+                0.00    0.00       2/2           long long* std::fill_n<long long*, unsigned long, long long>(long long*, unsigned long, long long const&) [76]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<long long, std::allocator<long long> >::_S_check_init_len(unsigned long, std::allocator<long long> const&) [65]
+[64]     0.0    0.00    0.00       2         std::vector<long long, std::allocator<long long> >::_S_max_size(std::allocator<long long> const&) [64]
+                0.00    0.00       2/2           std::allocator_traits<std::allocator<long long> >::max_size(std::allocator<long long> const&) [62]
+                0.00    0.00       2/3           unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [42]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<long long, std::allocator<long long> >::vector(unsigned long, std::allocator<long long> const&) [67]
+[65]     0.0    0.00    0.00       2         std::vector<long long, std::allocator<long long> >::_S_check_init_len(unsigned long, std::allocator<long long> const&) [65]
+                0.00    0.00       2/6           std::allocator<long long>::allocator(std::allocator<long long> const&) [15]
+                0.00    0.00       2/2           std::vector<long long, std::allocator<long long> >::_S_max_size(std::allocator<long long> const&) [64]
+                0.00    0.00       2/9           std::allocator<long long>::~allocator() [9]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<long long, std::allocator<long long> >::vector(unsigned long, std::allocator<long long> const&) [67]
+[66]     0.0    0.00    0.00       2         std::vector<long long, std::allocator<long long> >::_M_default_initialize(unsigned long) [66]
+                0.00    0.00       2/8           std::_Vector_base<long long, std::allocator<long long> >::_M_get_Tp_allocator() [11]
+                0.00    0.00       2/2           long long* std::__uninitialized_default_n_a<long long*, unsigned long, long long>(long long*, unsigned long, std::allocator<long long>&) [75]
+-----------------------------------------------
+                0.00    0.00       1/2           main [6]
+                0.00    0.00       1/2           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&) [82]
+[67]     0.0    0.00    0.00       2         std::vector<long long, std::allocator<long long> >::vector(unsigned long, std::allocator<long long> const&) [67]
+                0.00    0.00       2/2           std::vector<long long, std::allocator<long long> >::_S_check_init_len(unsigned long, std::allocator<long long> const&) [65]
+                0.00    0.00       2/2           std::_Vector_base<long long, std::allocator<long long> >::_Vector_base(unsigned long, std::allocator<long long> const&) [56]
+                0.00    0.00       2/2           std::vector<long long, std::allocator<long long> >::_M_default_initialize(unsigned long) [66]
+-----------------------------------------------
+                0.00    0.00       2/2           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}*& std::_Any_data::_M_access<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}*>() [69]
+[68]     0.0    0.00    0.00       2         std::_Any_data::_M_access() [68]
+-----------------------------------------------
+                0.00    0.00       1/2           void std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_create<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(std::_Any_data&, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&, std::integral_constant<bool, false>) [108]
+                0.00    0.00       1/2           std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_destroy(std::_Any_data&, std::integral_constant<bool, false>) [103]
+[69]     0.0    0.00    0.00       2         SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}*& std::_Any_data::_M_access<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}*>() [69]
+                0.00    0.00       2/2           std::_Any_data::_M_access() [68]
+-----------------------------------------------
+                0.00    0.00       2/2           long long* std::__uninitialized_default_n_1<true>::__uninit_default_n<long long*, unsigned long>(long long*, unsigned long) [63]
+[70]     0.0    0.00    0.00       2         void std::_Construct<long long>(long long*) [70]
+                0.00    0.00       2/3           operator new(unsigned long, void*) [46]
+-----------------------------------------------
+                0.00    0.00       2/2           long long* std::fill_n<long long*, unsigned long, long long>(long long*, unsigned long, long long const&) [76]
+[71]     0.0    0.00    0.00       2         long long* std::__fill_n_a<long long*, unsigned long, long long>(long long*, unsigned long, long long const&, std::random_access_iterator_tag) [71]
+                0.00    0.00       1/1           void std::__fill_a<long long*, long long>(long long*, long long*, long long const&) [149]
+-----------------------------------------------
+                0.00    0.00       2/2           long long* std::__uninitialized_default_n_1<true>::__uninit_default_n<long long*, unsigned long>(long long*, unsigned long) [63]
+[72]     0.0    0.00    0.00       2         long long* std::__addressof<long long>(long long&) [72]
+-----------------------------------------------
+                0.00    0.00       2/2           long long* std::fill_n<long long*, unsigned long, long long>(long long*, unsigned long, long long const&) [76]
+[73]     0.0    0.00    0.00       2         std::iterator_traits<long long*>::iterator_category std::__iterator_category<long long*>(long long* const&) [73]
+-----------------------------------------------
+                0.00    0.00       2/2           long long* std::__uninitialized_default_n_a<long long*, unsigned long, long long>(long long*, unsigned long, std::allocator<long long>&) [75]
+[74]     0.0    0.00    0.00       2         long long* std::__uninitialized_default_n<long long*, unsigned long>(long long*, unsigned long) [74]
+                0.00    0.00       2/2           long long* std::__uninitialized_default_n_1<true>::__uninit_default_n<long long*, unsigned long>(long long*, unsigned long) [63]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<long long, std::allocator<long long> >::_M_default_initialize(unsigned long) [66]
+[75]     0.0    0.00    0.00       2         long long* std::__uninitialized_default_n_a<long long*, unsigned long, long long>(long long*, unsigned long, std::allocator<long long>&) [75]
+                0.00    0.00       2/2           long long* std::__uninitialized_default_n<long long*, unsigned long>(long long*, unsigned long) [74]
+-----------------------------------------------
+                0.00    0.00       2/2           long long* std::__uninitialized_default_n_1<true>::__uninit_default_n<long long*, unsigned long>(long long*, unsigned long) [63]
+[76]     0.0    0.00    0.00       2         long long* std::fill_n<long long*, unsigned long, long long>(long long*, unsigned long, long long const&) [76]
+                0.00    0.00       2/2           std::iterator_traits<long long*>::iterator_category std::__iterator_category<long long*>(long long* const&) [73]
+                0.00    0.00       2/3           std::__size_to_integer(unsigned long) [41]
+                0.00    0.00       2/2           long long* std::__fill_n_a<long long*, unsigned long, long long>(long long*, unsigned long, long long const&, std::random_access_iterator_tag) [71]
+-----------------------------------------------
+                0.00    0.00       1/2           std::enable_if<is_invocable_r_v<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>, void>::type std::__invoke_r<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>(SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long&&, long long&&, long long&&) [135]
+                0.00    0.00       1/2           void std::__invoke_impl<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>(std::__invoke_other, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long&&, long long&&, long long&&) [137]
+[77]     0.0    0.00    0.00       2         SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}& std::forward<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&>(std::remove_reference<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&>::type&) [77]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__Zpl4NodeS_ [153]
+[78]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [78]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[79]     0.0    0.00    0.00       1         SegTree::sum(long long, long long) [79]
+                0.00    0.00       1/1           SegTree::_sum(long long, long long, long long, long long, long long) [80]
+-----------------------------------------------
+                0.00    0.00       1/1           SegTree::sum(long long, long long) [79]
+[80]     0.0    0.00    0.00       1         SegTree::_sum(long long, long long, long long, long long, long long) [80]
+                0.00    0.00       1/1           SegTree::pushdn(long long) [81]
+-----------------------------------------------
+                0.00    0.00       1/1           SegTree::_sum(long long, long long, long long, long long, long long) [80]
+[81]     0.0    0.00    0.00       1         SegTree::pushdn(long long) [81]
+                0.00    0.00       3/7           std::vector<long long, std::allocator<long long> >::operator[](unsigned long) [13]
+                0.00    0.00       2/2           SegTree::apply(long long, long long) [47]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[82]     0.0    0.00    0.00       1         SegTree::SegTree(std::vector<long long, std::allocator<long long> >&) [82]
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::vector() [125]
+                0.00    0.00       1/1           std::vector<long long, std::allocator<long long> >::vector() [129]
+                0.00    0.00       1/1           std::function<void (long long, long long, long long)>::function<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}, void>(SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&) [131]
+                0.00    0.00       1/1           std::vector<long long, std::allocator<long long> >::size() const [90]
+                0.00    0.00       1/3           std::allocator<long long>::allocator() [33]
+                0.00    0.00       1/2           std::vector<long long, std::allocator<long long> >::vector(unsigned long, std::allocator<long long> const&) [67]
+                0.00    0.00       1/1           std::vector<long long, std::allocator<long long> >::operator=(std::vector<long long, std::allocator<long long> >&&) [130]
+                0.00    0.00       1/4           std::vector<long long, std::allocator<long long> >::~vector() [30]
+                0.00    0.00       1/2           std::allocator<Node>::allocator() [50]
+                0.00    0.00       1/9           std::allocator<long long>::~allocator() [9]
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::vector(unsigned long, std::allocator<Node> const&) [124]
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::operator=(std::vector<Node, std::allocator<Node> >&&) [126]
+                0.00    0.00       1/3           std::vector<Node, std::allocator<Node> >::~vector() [40]
+                0.00    0.00       1/6           std::allocator<Node>::~allocator() [14]
+                0.00    0.00       1/1           std::function<void (long long, long long, long long)>::operator()(long long, long long, long long) const [91]
+                0.00    0.00       1/1           std::function<void (long long, long long, long long)>::~function() [132]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[83]     0.0    0.00    0.00       1         SegTree::~SegTree() [83]
+                0.00    0.00       1/3           std::vector<Node, std::allocator<Node> >::~vector() [40]
+                0.00    0.00       1/4           std::vector<long long, std::allocator<long long> >::~vector() [30]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::_M_move_assign(std::vector<Node, std::allocator<Node> >&&, std::integral_constant<bool, true>) [120]
+[84]     0.0    0.00    0.00       1         std::_Vector_base<Node, std::allocator<Node> >::get_allocator() const [84]
+                0.00    0.00       1/1           std::_Vector_base<Node, std::allocator<Node> >::_M_get_Tp_allocator() const [85]
+                0.00    0.00       1/4           std::allocator<Node>::allocator(std::allocator<Node> const&) [24]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Node, std::allocator<Node> >::get_allocator() const [84]
+[85]     0.0    0.00    0.00       1         std::_Vector_base<Node, std::allocator<Node> >::_M_get_Tp_allocator() const [85]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<long long, std::allocator<long long> >::_M_move_assign(std::vector<long long, std::allocator<long long> >&&, std::integral_constant<bool, true>) [127]
+[86]     0.0    0.00    0.00       1         std::_Vector_base<long long, std::allocator<long long> >::get_allocator() const [86]
+                0.00    0.00       1/1           std::_Vector_base<long long, std::allocator<long long> >::_M_get_Tp_allocator() const [87]
+                0.00    0.00       1/6           std::allocator<long long>::allocator(std::allocator<long long> const&) [15]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<long long, std::allocator<long long> >::get_allocator() const [86]
+[87]     0.0    0.00    0.00       1         std::_Vector_base<long long, std::allocator<long long> >::_M_get_Tp_allocator() const [87]
+-----------------------------------------------
+                0.00    0.00       1/1           std::function<void (long long, long long, long long)>::operator()(long long, long long, long long) const [91]
+[88]     0.0    0.00    0.00       1         std::_Function_base::_M_empty() const [88]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<Node> >::max_size(std::allocator<Node> const&) [115]
+[89]     0.0    0.00    0.00       1         std::__new_allocator<Node>::max_size() const [89]
+                0.00    0.00       1/2           std::__new_allocator<Node>::_M_max_size() const [48]
+-----------------------------------------------
+                0.00    0.00       1/1           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&) [82]
+[90]     0.0    0.00    0.00       1         std::vector<long long, std::allocator<long long> >::size() const [90]
+-----------------------------------------------
+                0.00    0.00       1/1           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&) [82]
+[91]     0.0    0.00    0.00       1         std::function<void (long long, long long, long long)>::operator()(long long, long long, long long) const [91]
+                0.00    0.00       3/12          long long&& std::forward<long long>(std::remove_reference<long long>::type&) [8]
+                0.00    0.00       1/1           std::_Function_base::_M_empty() const [88]
+                0.00    0.00       1/1           std::_Function_handler<void (long long, long long, long long), SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_invoke(std::_Any_data const&, long long&&, long long&&, long long&&) [117]
+-----------------------------------------------
+                0.00    0.00       1/1           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}* const& std::_Any_data::_M_access<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}*>() const [93]
+[92]     0.0    0.00    0.00       1         std::_Any_data::_M_access() const [92]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_get_pointer(std::_Any_data const&) [105]
+[93]     0.0    0.00    0.00       1         SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}* const& std::_Any_data::_M_access<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}*>() const [93]
+                0.00    0.00       1/1           std::_Any_data::_M_access() const [92]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Node, std::allocator<Node> >::_M_create_storage(unsigned long) [96]
+[94]     0.0    0.00    0.00       1         std::_Vector_base<Node, std::allocator<Node> >::_M_allocate(unsigned long) [94]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<Node> >::allocate(std::allocator<Node>&, unsigned long) [114]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Node, std::allocator<Node> >::_Vector_base() [99]
+[95]     0.0    0.00    0.00       1         std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl::_Vector_impl() [95]
+                0.00    0.00       1/2           std::allocator<Node>::allocator() [50]
+                0.00    0.00       1/5           std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data::_Vector_impl_data() [22]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Node, std::allocator<Node> >::_Vector_base(unsigned long, std::allocator<Node> const&) [97]
+[96]     0.0    0.00    0.00       1         std::_Vector_base<Node, std::allocator<Node> >::_M_create_storage(unsigned long) [96]
+                0.00    0.00       1/1           std::_Vector_base<Node, std::allocator<Node> >::_M_allocate(unsigned long) [94]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::vector(unsigned long, std::allocator<Node> const&) [124]
+[97]     0.0    0.00    0.00       1         std::_Vector_base<Node, std::allocator<Node> >::_Vector_base(unsigned long, std::allocator<Node> const&) [97]
+                0.00    0.00       1/2           std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl::_Vector_impl(std::allocator<Node> const&) [51]
+                0.00    0.00       1/1           std::_Vector_base<Node, std::allocator<Node> >::_M_create_storage(unsigned long) [96]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::vector(std::allocator<Node> const&) [123]
+[98]     0.0    0.00    0.00       1         std::_Vector_base<Node, std::allocator<Node> >::_Vector_base(std::allocator<Node> const&) [98]
+                0.00    0.00       1/2           std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl::_Vector_impl(std::allocator<Node> const&) [51]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::vector() [125]
+[99]     0.0    0.00    0.00       1         std::_Vector_base<Node, std::allocator<Node> >::_Vector_base() [99]
+                0.00    0.00       1/1           std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl::_Vector_impl() [95]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<long long, std::allocator<long long> >::_Vector_base() [101]
+[100]    0.0    0.00    0.00       1         std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl::_Vector_impl() [100]
+                0.00    0.00       1/3           std::allocator<long long>::allocator() [33]
+                0.00    0.00       1/6           std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data::_Vector_impl_data() [19]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<long long, std::allocator<long long> >::vector() [129]
+[101]    0.0    0.00    0.00       1         std::_Vector_base<long long, std::allocator<long long> >::_Vector_base() [101]
+                0.00    0.00       1/1           std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl::_Vector_impl() [100]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<long long, std::allocator<long long> >::vector(std::allocator<long long> const&) [128]
+[102]    0.0    0.00    0.00       1         std::_Vector_base<long long, std::allocator<long long> >::_Vector_base(std::allocator<long long> const&) [102]
+                0.00    0.00       1/3           std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl::_Vector_impl(std::allocator<long long> const&) [38]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [104]
+[103]    0.0    0.00    0.00       1         std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_destroy(std::_Any_data&, std::integral_constant<bool, false>) [103]
+                0.00    0.00       1/2           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}*& std::_Any_data::_M_access<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}*>() [69]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Function_handler<void (long long, long long, long long), SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [116]
+[104]    0.0    0.00    0.00       1         std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [104]
+                0.00    0.00       1/1           std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_destroy(std::_Any_data&, std::integral_constant<bool, false>) [103]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Function_handler<void (long long, long long, long long), SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_invoke(std::_Any_data const&, long long&&, long long&&, long long&&) [117]
+[105]    0.0    0.00    0.00       1         std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_get_pointer(std::_Any_data const&) [105]
+                0.00    0.00       1/1           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}* const& std::_Any_data::_M_access<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}*>() const [93]
+-----------------------------------------------
+                0.00    0.00       1/1           std::function<void (long long, long long, long long)>::function<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}, void>(SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&) [131]
+[106]    0.0    0.00    0.00       1         void std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_init_functor<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(std::_Any_data&, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&) [106]
+                0.00    0.00       1/3           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&& std::forward<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(std::remove_reference<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::type&) [43]
+                0.00    0.00       1/1           void std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_create<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(std::_Any_data&, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&, std::integral_constant<bool, false>) [108]
+-----------------------------------------------
+                0.00    0.00       1/1           std::function<void (long long, long long, long long)>::function<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}, void>(SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&) [131]
+[107]    0.0    0.00    0.00       1         bool std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_not_empty_function<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1} const&) [107]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_init_functor<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(std::_Any_data&, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&) [106]
+[108]    0.0    0.00    0.00       1         void std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_create<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(std::_Any_data&, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&, std::integral_constant<bool, false>) [108]
+                0.00    0.00       1/3           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&& std::forward<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(std::remove_reference<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::type&) [43]
+                0.00    0.00       1/2           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}*& std::_Any_data::_M_access<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}*>() [69]
+-----------------------------------------------
+                0.00    0.00       1/1           std::function<void (long long, long long, long long)>::function<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}, void>(SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&) [131]
+[109]    0.0    0.00    0.00       1         std::_Function_base::_Function_base() [109]
+-----------------------------------------------
+                0.00    0.00       1/1           std::function<void (long long, long long, long long)>::~function() [132]
+[110]    0.0    0.00    0.00       1         std::_Function_base::~_Function_base() [110]
+                0.00    0.00       1/1           std::_Function_handler<void (long long, long long, long long), SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [116]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<Node> >::deallocate(std::allocator<Node>&, Node*, unsigned long) [113]
+[111]    0.0    0.00    0.00       1         std::__new_allocator<Node>::deallocate(Node*, unsigned long) [111]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<Node> >::allocate(std::allocator<Node>&, unsigned long) [114]
+[112]    0.0    0.00    0.00       1         std::__new_allocator<Node>::allocate(unsigned long, void const*) [112]
+                0.00    0.00       1/2           std::__new_allocator<Node>::_M_max_size() const [48]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Node, std::allocator<Node> >::_M_deallocate(Node*, unsigned long) [36]
+[113]    0.0    0.00    0.00       1         std::allocator_traits<std::allocator<Node> >::deallocate(std::allocator<Node>&, Node*, unsigned long) [113]
+                0.00    0.00       1/1           std::__new_allocator<Node>::deallocate(Node*, unsigned long) [111]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Node, std::allocator<Node> >::_M_allocate(unsigned long) [94]
+[114]    0.0    0.00    0.00       1         std::allocator_traits<std::allocator<Node> >::allocate(std::allocator<Node>&, unsigned long) [114]
+                0.00    0.00       1/1           std::__new_allocator<Node>::allocate(unsigned long, void const*) [112]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::_S_max_size(std::allocator<Node> const&) [119]
+[115]    0.0    0.00    0.00       1         std::allocator_traits<std::allocator<Node> >::max_size(std::allocator<Node> const&) [115]
+                0.00    0.00       1/1           std::__new_allocator<Node>::max_size() const [89]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Function_base::~_Function_base() [110]
+[116]    0.0    0.00    0.00       1         std::_Function_handler<void (long long, long long, long long), SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [116]
+                0.00    0.00       1/1           std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [104]
+-----------------------------------------------
+                0.00    0.00       1/1           std::function<void (long long, long long, long long)>::operator()(long long, long long, long long) const [91]
+[117]    0.0    0.00    0.00       1         std::_Function_handler<void (long long, long long, long long), SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_invoke(std::_Any_data const&, long long&&, long long&&, long long&&) [117]
+                0.00    0.00       3/12          long long&& std::forward<long long>(std::remove_reference<long long>::type&) [8]
+                0.00    0.00       1/1           std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_get_pointer(std::_Any_data const&) [105]
+                0.00    0.00       1/1           std::enable_if<is_invocable_r_v<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>, void>::type std::__invoke_r<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>(SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long&&, long long&&, long long&&) [135]
+-----------------------------------------------
+                0.00    0.00       1/1           Node* std::__uninitialized_default_n<Node*, unsigned long>(Node*, unsigned long) [141]
+[118]    0.0    0.00    0.00       1         Node* std::__uninitialized_default_n_1<true>::__uninit_default_n<Node*, unsigned long>(Node*, unsigned long) [118]
+                0.00    0.00       1/1           Node* std::__addressof<Node>(Node&) [136]
+                0.00    0.00       1/1           void std::_Construct<Node>(Node*) [133]
+                0.00    0.00       1/1           Node* std::fill_n<Node*, unsigned long, Node>(Node*, unsigned long, Node const&) [147]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::_S_check_init_len(unsigned long, std::allocator<Node> const&) [121]
+[119]    0.0    0.00    0.00       1         std::vector<Node, std::allocator<Node> >::_S_max_size(std::allocator<Node> const&) [119]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<Node> >::max_size(std::allocator<Node> const&) [115]
+                0.00    0.00       1/3           unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [42]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::operator=(std::vector<Node, std::allocator<Node> >&&) [126]
+[120]    0.0    0.00    0.00       1         std::vector<Node, std::allocator<Node> >::_M_move_assign(std::vector<Node, std::allocator<Node> >&&, std::integral_constant<bool, true>) [120]
+                0.00    0.00       2/2           std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data::_M_swap_data(std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data&) [52]
+                0.00    0.00       2/6           std::_Vector_base<Node, std::allocator<Node> >::_M_get_Tp_allocator() [17]
+                0.00    0.00       1/1           std::_Vector_base<Node, std::allocator<Node> >::get_allocator() const [84]
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::vector(std::allocator<Node> const&) [123]
+                0.00    0.00       1/6           std::allocator<Node>::~allocator() [14]
+                0.00    0.00       1/1           void std::__alloc_on_move<std::allocator<Node> >(std::allocator<Node>&, std::allocator<Node>&) [138]
+                0.00    0.00       1/3           std::vector<Node, std::allocator<Node> >::~vector() [40]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::vector(unsigned long, std::allocator<Node> const&) [124]
+[121]    0.0    0.00    0.00       1         std::vector<Node, std::allocator<Node> >::_S_check_init_len(unsigned long, std::allocator<Node> const&) [121]
+                0.00    0.00       1/4           std::allocator<Node>::allocator(std::allocator<Node> const&) [24]
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::_S_max_size(std::allocator<Node> const&) [119]
+                0.00    0.00       1/6           std::allocator<Node>::~allocator() [14]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::vector(unsigned long, std::allocator<Node> const&) [124]
+[122]    0.0    0.00    0.00       1         std::vector<Node, std::allocator<Node> >::_M_default_initialize(unsigned long) [122]
+                0.00    0.00       1/6           std::_Vector_base<Node, std::allocator<Node> >::_M_get_Tp_allocator() [17]
+                0.00    0.00       1/1           Node* std::__uninitialized_default_n_a<Node*, unsigned long, Node>(Node*, unsigned long, std::allocator<Node>&) [142]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::_M_move_assign(std::vector<Node, std::allocator<Node> >&&, std::integral_constant<bool, true>) [120]
+[123]    0.0    0.00    0.00       1         std::vector<Node, std::allocator<Node> >::vector(std::allocator<Node> const&) [123]
+                0.00    0.00       1/1           std::_Vector_base<Node, std::allocator<Node> >::_Vector_base(std::allocator<Node> const&) [98]
+-----------------------------------------------
+                0.00    0.00       1/1           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&) [82]
+[124]    0.0    0.00    0.00       1         std::vector<Node, std::allocator<Node> >::vector(unsigned long, std::allocator<Node> const&) [124]
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::_S_check_init_len(unsigned long, std::allocator<Node> const&) [121]
+                0.00    0.00       1/1           std::_Vector_base<Node, std::allocator<Node> >::_Vector_base(unsigned long, std::allocator<Node> const&) [97]
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::_M_default_initialize(unsigned long) [122]
+-----------------------------------------------
+                0.00    0.00       1/1           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&) [82]
+[125]    0.0    0.00    0.00       1         std::vector<Node, std::allocator<Node> >::vector() [125]
+                0.00    0.00       1/1           std::_Vector_base<Node, std::allocator<Node> >::_Vector_base() [99]
+-----------------------------------------------
+                0.00    0.00       1/1           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&) [82]
+[126]    0.0    0.00    0.00       1         std::vector<Node, std::allocator<Node> >::operator=(std::vector<Node, std::allocator<Node> >&&) [126]
+                0.00    0.00       1/1           std::remove_reference<std::vector<Node, std::allocator<Node> >&>::type&& std::move<std::vector<Node, std::allocator<Node> >&>(std::vector<Node, std::allocator<Node> >&) [145]
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::_M_move_assign(std::vector<Node, std::allocator<Node> >&&, std::integral_constant<bool, true>) [120]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<long long, std::allocator<long long> >::operator=(std::vector<long long, std::allocator<long long> >&&) [130]
+[127]    0.0    0.00    0.00       1         std::vector<long long, std::allocator<long long> >::_M_move_assign(std::vector<long long, std::allocator<long long> >&&, std::integral_constant<bool, true>) [127]
+                0.00    0.00       2/2           std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data::_M_swap_data(std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data&) [55]
+                0.00    0.00       2/8           std::_Vector_base<long long, std::allocator<long long> >::_M_get_Tp_allocator() [11]
+                0.00    0.00       1/1           std::_Vector_base<long long, std::allocator<long long> >::get_allocator() const [86]
+                0.00    0.00       1/1           std::vector<long long, std::allocator<long long> >::vector(std::allocator<long long> const&) [128]
+                0.00    0.00       1/9           std::allocator<long long>::~allocator() [9]
+                0.00    0.00       1/1           void std::__alloc_on_move<std::allocator<long long> >(std::allocator<long long>&, std::allocator<long long>&) [139]
+                0.00    0.00       1/4           std::vector<long long, std::allocator<long long> >::~vector() [30]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<long long, std::allocator<long long> >::_M_move_assign(std::vector<long long, std::allocator<long long> >&&, std::integral_constant<bool, true>) [127]
+[128]    0.0    0.00    0.00       1         std::vector<long long, std::allocator<long long> >::vector(std::allocator<long long> const&) [128]
+                0.00    0.00       1/1           std::_Vector_base<long long, std::allocator<long long> >::_Vector_base(std::allocator<long long> const&) [102]
+-----------------------------------------------
+                0.00    0.00       1/1           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&) [82]
+[129]    0.0    0.00    0.00       1         std::vector<long long, std::allocator<long long> >::vector() [129]
+                0.00    0.00       1/1           std::_Vector_base<long long, std::allocator<long long> >::_Vector_base() [101]
+-----------------------------------------------
+                0.00    0.00       1/1           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&) [82]
+[130]    0.0    0.00    0.00       1         std::vector<long long, std::allocator<long long> >::operator=(std::vector<long long, std::allocator<long long> >&&) [130]
+                0.00    0.00       1/1           std::remove_reference<std::vector<long long, std::allocator<long long> >&>::type&& std::move<std::vector<long long, std::allocator<long long> >&>(std::vector<long long, std::allocator<long long> >&) [146]
+                0.00    0.00       1/1           std::vector<long long, std::allocator<long long> >::_M_move_assign(std::vector<long long, std::allocator<long long> >&&, std::integral_constant<bool, true>) [127]
+-----------------------------------------------
+                0.00    0.00       1/1           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&) [82]
+[131]    0.0    0.00    0.00       1         std::function<void (long long, long long, long long)>::function<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}, void>(SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&) [131]
+                0.00    0.00       1/1           std::_Function_base::_Function_base() [109]
+                0.00    0.00       1/1           bool std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_not_empty_function<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1} const&) [107]
+                0.00    0.00       1/3           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&& std::forward<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(std::remove_reference<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::type&) [43]
+                0.00    0.00       1/1           void std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_init_functor<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(std::_Any_data&, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&) [106]
+-----------------------------------------------
+                0.00    0.00       1/1           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&) [82]
+[132]    0.0    0.00    0.00       1         std::function<void (long long, long long, long long)>::~function() [132]
+                0.00    0.00       1/1           std::_Function_base::~_Function_base() [110]
+-----------------------------------------------
+                0.00    0.00       1/1           Node* std::__uninitialized_default_n_1<true>::__uninit_default_n<Node*, unsigned long>(Node*, unsigned long) [118]
+[133]    0.0    0.00    0.00       1         void std::_Construct<Node>(Node*) [133]
+                0.00    0.00       1/3           operator new(unsigned long, void*) [46]
+-----------------------------------------------
+                0.00    0.00       1/1           Node* std::fill_n<Node*, unsigned long, Node>(Node*, unsigned long, Node const&) [147]
+[134]    0.0    0.00    0.00       1         Node* std::__fill_n_a<Node*, unsigned long, Node>(Node*, unsigned long, Node const&, std::random_access_iterator_tag) [134]
+                0.00    0.00       1/1           void std::__fill_a<Node*, Node>(Node*, Node*, Node const&) [148]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Function_handler<void (long long, long long, long long), SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_invoke(std::_Any_data const&, long long&&, long long&&, long long&&) [117]
+[135]    0.0    0.00    0.00       1         std::enable_if<is_invocable_r_v<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>, void>::type std::__invoke_r<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>(SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long&&, long long&&, long long&&) [135]
+                0.00    0.00       3/12          long long&& std::forward<long long>(std::remove_reference<long long>::type&) [8]
+                0.00    0.00       1/2           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}& std::forward<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&>(std::remove_reference<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&>::type&) [77]
+                0.00    0.00       1/1           void std::__invoke_impl<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>(std::__invoke_other, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long&&, long long&&, long long&&) [137]
+-----------------------------------------------
+                0.00    0.00       1/1           Node* std::__uninitialized_default_n_1<true>::__uninit_default_n<Node*, unsigned long>(Node*, unsigned long) [118]
+[136]    0.0    0.00    0.00       1         Node* std::__addressof<Node>(Node&) [136]
+-----------------------------------------------
+                0.00    0.00       1/1           std::enable_if<is_invocable_r_v<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>, void>::type std::__invoke_r<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>(SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long&&, long long&&, long long&&) [135]
+[137]    0.0    0.00    0.00       1         void std::__invoke_impl<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>(std::__invoke_other, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long&&, long long&&, long long&&) [137]
+                0.00    0.00       3/12          long long&& std::forward<long long>(std::remove_reference<long long>::type&) [8]
+                0.00    0.00       1/2           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}& std::forward<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&>(std::remove_reference<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&>::type&) [77]
+                0.00    0.00       1/1           SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}::operator()(long long, long long, long long) const [152]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::_M_move_assign(std::vector<Node, std::allocator<Node> >&&, std::integral_constant<bool, true>) [120]
+[138]    0.0    0.00    0.00       1         void std::__alloc_on_move<std::allocator<Node> >(std::allocator<Node>&, std::allocator<Node>&) [138]
+                0.00    0.00       1/1           std::remove_reference<std::allocator<Node>&>::type&& std::move<std::allocator<Node>&>(std::allocator<Node>&) [143]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<long long, std::allocator<long long> >::_M_move_assign(std::vector<long long, std::allocator<long long> >&&, std::integral_constant<bool, true>) [127]
+[139]    0.0    0.00    0.00       1         void std::__alloc_on_move<std::allocator<long long> >(std::allocator<long long>&, std::allocator<long long>&) [139]
+                0.00    0.00       1/1           std::remove_reference<std::allocator<long long>&>::type&& std::move<std::allocator<long long>&>(std::allocator<long long>&) [144]
+-----------------------------------------------
+                0.00    0.00       1/1           Node* std::fill_n<Node*, unsigned long, Node>(Node*, unsigned long, Node const&) [147]
+[140]    0.0    0.00    0.00       1         std::iterator_traits<Node*>::iterator_category std::__iterator_category<Node*>(Node* const&) [140]
+-----------------------------------------------
+                0.00    0.00       1/1           Node* std::__uninitialized_default_n_a<Node*, unsigned long, Node>(Node*, unsigned long, std::allocator<Node>&) [142]
+[141]    0.0    0.00    0.00       1         Node* std::__uninitialized_default_n<Node*, unsigned long>(Node*, unsigned long) [141]
+                0.00    0.00       1/1           Node* std::__uninitialized_default_n_1<true>::__uninit_default_n<Node*, unsigned long>(Node*, unsigned long) [118]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::_M_default_initialize(unsigned long) [122]
+[142]    0.0    0.00    0.00       1         Node* std::__uninitialized_default_n_a<Node*, unsigned long, Node>(Node*, unsigned long, std::allocator<Node>&) [142]
+                0.00    0.00       1/1           Node* std::__uninitialized_default_n<Node*, unsigned long>(Node*, unsigned long) [141]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::__alloc_on_move<std::allocator<Node> >(std::allocator<Node>&, std::allocator<Node>&) [138]
+[143]    0.0    0.00    0.00       1         std::remove_reference<std::allocator<Node>&>::type&& std::move<std::allocator<Node>&>(std::allocator<Node>&) [143]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::__alloc_on_move<std::allocator<long long> >(std::allocator<long long>&, std::allocator<long long>&) [139]
+[144]    0.0    0.00    0.00       1         std::remove_reference<std::allocator<long long>&>::type&& std::move<std::allocator<long long>&>(std::allocator<long long>&) [144]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Node, std::allocator<Node> >::operator=(std::vector<Node, std::allocator<Node> >&&) [126]
+[145]    0.0    0.00    0.00       1         std::remove_reference<std::vector<Node, std::allocator<Node> >&>::type&& std::move<std::vector<Node, std::allocator<Node> >&>(std::vector<Node, std::allocator<Node> >&) [145]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<long long, std::allocator<long long> >::operator=(std::vector<long long, std::allocator<long long> >&&) [130]
+[146]    0.0    0.00    0.00       1         std::remove_reference<std::vector<long long, std::allocator<long long> >&>::type&& std::move<std::vector<long long, std::allocator<long long> >&>(std::vector<long long, std::allocator<long long> >&) [146]
+-----------------------------------------------
+                0.00    0.00       1/1           Node* std::__uninitialized_default_n_1<true>::__uninit_default_n<Node*, unsigned long>(Node*, unsigned long) [118]
+[147]    0.0    0.00    0.00       1         Node* std::fill_n<Node*, unsigned long, Node>(Node*, unsigned long, Node const&) [147]
+                0.00    0.00       1/1           std::iterator_traits<Node*>::iterator_category std::__iterator_category<Node*>(Node* const&) [140]
+                0.00    0.00       1/3           std::__size_to_integer(unsigned long) [41]
+                0.00    0.00       1/1           Node* std::__fill_n_a<Node*, unsigned long, Node>(Node*, unsigned long, Node const&, std::random_access_iterator_tag) [134]
+-----------------------------------------------
+                0.00    0.00       1/1           Node* std::__fill_n_a<Node*, unsigned long, Node>(Node*, unsigned long, Node const&, std::random_access_iterator_tag) [134]
+[148]    0.0    0.00    0.00       1         void std::__fill_a<Node*, Node>(Node*, Node*, Node const&) [148]
+                0.00    0.00       1/1           __gnu_cxx::__enable_if<!std::__is_scalar<Node>::__value, void>::__type std::__fill_a1<Node*, Node>(Node*, Node*, Node const&) [150]
+-----------------------------------------------
+                0.00    0.00       1/1           long long* std::__fill_n_a<long long*, unsigned long, long long>(long long*, unsigned long, long long const&, std::random_access_iterator_tag) [71]
+[149]    0.0    0.00    0.00       1         void std::__fill_a<long long*, long long>(long long*, long long*, long long const&) [149]
+                0.00    0.00       1/1           __gnu_cxx::__enable_if<std::__is_scalar<long long>::__value, void>::__type std::__fill_a1<long long*, long long>(long long*, long long*, long long const&) [151]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::__fill_a<Node*, Node>(Node*, Node*, Node const&) [148]
+[150]    0.0    0.00    0.00       1         __gnu_cxx::__enable_if<!std::__is_scalar<Node>::__value, void>::__type std::__fill_a1<Node*, Node>(Node*, Node*, Node const&) [150]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::__fill_a<long long*, long long>(long long*, long long*, long long const&) [149]
+[151]    0.0    0.00    0.00       1         __gnu_cxx::__enable_if<std::__is_scalar<long long>::__value, void>::__type std::__fill_a1<long long*, long long>(long long*, long long*, long long const&) [151]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::__invoke_impl<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>(std::__invoke_other, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long&&, long long&&, long long&&) [137]
+[152]    0.0    0.00    0.00       1         SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}::operator()(long long, long long, long long) const [152]
+                0.00    0.00       2/8           std::vector<Node, std::allocator<Node> >::operator[](unsigned long) [12]
+                0.00    0.00       1/7           std::vector<long long, std::allocator<long long> >::operator[](unsigned long) [13]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2023 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [78] __static_initialization_and_destruction_0(int, int) [55] std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data::_M_swap_data(std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data&) [128] std::vector<long long, std::allocator<long long> >::vector(std::allocator<long long> const&)
+  [79] SegTree::sum(long long, long long) [19] std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data::_Vector_impl_data() [67] std::vector<long long, std::allocator<long long> >::vector(unsigned long, std::allocator<long long> const&)
+  [80] SegTree::_sum(long long, long long, long long, long long, long long) [11] std::_Vector_base<long long, std::allocator<long long> >::_M_get_Tp_allocator() [129] std::vector<long long, std::allocator<long long> >::vector()
+  [47] SegTree::apply(long long, long long) [101] std::_Vector_base<long long, std::allocator<long long> >::_Vector_base() [30] std::vector<long long, std::allocator<long long> >::~vector()
+  [81] SegTree::pushdn(long long) [102] std::_Vector_base<long long, std::allocator<long long> >::_Vector_base(std::allocator<long long> const&) [130] std::vector<long long, std::allocator<long long> >::operator=(std::vector<long long, std::allocator<long long> >&&)
+  [82] SegTree::SegTree(std::vector<long long, std::allocator<long long> >&) [56] std::_Vector_base<long long, std::allocator<long long> >::_Vector_base(unsigned long, std::allocator<long long> const&) [13] std::vector<long long, std::allocator<long long> >::operator[](unsigned long)
+  [83] SegTree::~SegTree()    [28] std::_Vector_base<long long, std::allocator<long long> >::~_Vector_base() [131] std::function<void (long long, long long, long long)>::function<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}, void>(SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&)
+  [84] std::_Vector_base<Node, std::allocator<Node> >::get_allocator() const [103] std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_destroy(std::_Any_data&, std::integral_constant<bool, false>) [132] std::function<void (long long, long long, long long)>::~function()
+  [85] std::_Vector_base<Node, std::allocator<Node> >::_M_get_Tp_allocator() const [104] std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [68] std::_Any_data::_M_access()
+  [86] std::_Vector_base<long long, std::allocator<long long> >::get_allocator() const [105] std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_get_pointer(std::_Any_data const&) [69] SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}*& std::_Any_data::_M_access<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}*>()
+  [87] std::_Vector_base<long long, std::allocator<long long> >::_M_get_Tp_allocator() const [106] void std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_init_functor<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(std::_Any_data&, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&) [133] void std::_Construct<Node>(Node*)
+  [88] std::_Function_base::_M_empty() const [107] bool std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_not_empty_function<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1} const&) [70] void std::_Construct<long long>(long long*)
+  [48] std::__new_allocator<Node>::_M_max_size() const [108] void std::_Function_base::_Base_manager<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_create<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(std::_Any_data&, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&&, std::integral_constant<bool, false>) [134] Node* std::__fill_n_a<Node*, unsigned long, Node>(Node*, unsigned long, Node const&, std::random_access_iterator_tag)
+  [89] std::__new_allocator<Node>::max_size() const [109] std::_Function_base::_Function_base() [71] long long* std::__fill_n_a<long long*, unsigned long, long long>(long long*, unsigned long, long long const&, std::random_access_iterator_tag)
+  [23] std::__new_allocator<long long>::_M_max_size() const [110] std::_Function_base::~_Function_base() [135] std::enable_if<is_invocable_r_v<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>, void>::type std::__invoke_r<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>(SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long&&, long long&&, long long&&)
+  [49] std::__new_allocator<long long>::max_size() const [111] std::__new_allocator<Node>::deallocate(Node*, unsigned long) [136] Node* std::__addressof<Node>(Node&)
+  [90] std::vector<long long, std::allocator<long long> >::size() const [112] std::__new_allocator<Node>::allocate(unsigned long, void const*) [72] long long* std::__addressof<long long>(long long&)
+  [91] std::function<void (long long, long long, long long)>::operator()(long long, long long, long long) const [29] std::__new_allocator<Node>::__new_allocator(std::__new_allocator<Node> const&) [137] void std::__invoke_impl<void, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long, long long, long long>(std::__invoke_other, SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&, long long&&, long long&&, long long&&)
+  [92] std::_Any_data::_M_access() const [57] std::__new_allocator<Node>::__new_allocator() [138] void std::__alloc_on_move<std::allocator<Node> >(std::allocator<Node>&, std::allocator<Node>&)
+  [93] SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}* const& std::_Any_data::_M_access<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}*>() const [20] std::__new_allocator<Node>::~__new_allocator() [139] void std::__alloc_on_move<std::allocator<long long> >(std::allocator<long long>&, std::allocator<long long>&)
+  [24] std::allocator<Node>::allocator(std::allocator<Node> const&) [58] std::__new_allocator<long long>::deallocate(long long*, unsigned long) [41] std::__size_to_integer(unsigned long)
+  [50] std::allocator<Node>::allocator() [59] std::__new_allocator<long long>::allocate(unsigned long, void const*) [140] std::iterator_traits<Node*>::iterator_category std::__iterator_category<Node*>(Node* const&)
+  [14] std::allocator<Node>::~allocator() [21] std::__new_allocator<long long>::__new_allocator(std::__new_allocator<long long> const&) [73] std::iterator_traits<long long*>::iterator_category std::__iterator_category<long long*>(long long* const&)
+  [15] std::allocator<long long>::allocator(std::allocator<long long> const&) [39] std::__new_allocator<long long>::__new_allocator() [141] Node* std::__uninitialized_default_n<Node*, unsigned long>(Node*, unsigned long)
+  [33] std::allocator<long long>::allocator() [10] std::__new_allocator<long long>::~__new_allocator() [74] long long* std::__uninitialized_default_n<long long*, unsigned long>(long long*, unsigned long)
+   [9] std::allocator<long long>::~allocator() [113] std::allocator_traits<std::allocator<Node> >::deallocate(std::allocator<Node>&, Node*, unsigned long) [142] Node* std::__uninitialized_default_n_a<Node*, unsigned long, Node>(Node*, unsigned long, std::allocator<Node>&)
+  [34] void std::_Destroy_aux<true>::__destroy<Node*>(Node*, Node*) [114] std::allocator_traits<std::allocator<Node> >::allocate(std::allocator<Node>&, unsigned long) [75] long long* std::__uninitialized_default_n_a<long long*, unsigned long, long long>(long long*, unsigned long, std::allocator<long long>&)
+  [25] void std::_Destroy_aux<true>::__destroy<long long*>(long long*, long long*) [115] std::allocator_traits<std::allocator<Node> >::max_size(std::allocator<Node> const&) [42] unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  [94] std::_Vector_base<Node, std::allocator<Node> >::_M_allocate(unsigned long) [60] std::allocator_traits<std::allocator<long long> >::deallocate(std::allocator<long long>&, long long*, unsigned long) [143] std::remove_reference<std::allocator<Node>&>::type&& std::move<std::allocator<Node>&>(std::allocator<Node>&)
+  [51] std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl::_Vector_impl(std::allocator<Node> const&) [61] std::allocator_traits<std::allocator<long long> >::allocate(std::allocator<long long>&, unsigned long) [144] std::remove_reference<std::allocator<long long>&>::type&& std::move<std::allocator<long long>&>(std::allocator<long long>&)
+  [95] std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl::_Vector_impl() [62] std::allocator_traits<std::allocator<long long> >::max_size(std::allocator<long long> const&) [145] std::remove_reference<std::vector<Node, std::allocator<Node> >&>::type&& std::move<std::vector<Node, std::allocator<Node> >&>(std::vector<Node, std::allocator<Node> >&)
+  [35] std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl::~_Vector_impl() [116] std::_Function_handler<void (long long, long long, long long), SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation) [146] std::remove_reference<std::vector<long long, std::allocator<long long> >&>::type&& std::move<std::vector<long long, std::allocator<long long> >&>(std::vector<long long, std::allocator<long long> >&)
+  [36] std::_Vector_base<Node, std::allocator<Node> >::_M_deallocate(Node*, unsigned long) [117] std::_Function_handler<void (long long, long long, long long), SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::_M_invoke(std::_Any_data const&, long long&&, long long&&, long long&&) [147] Node* std::fill_n<Node*, unsigned long, Node>(Node*, unsigned long, Node const&)
+  [96] std::_Vector_base<Node, std::allocator<Node> >::_M_create_storage(unsigned long) [118] Node* std::__uninitialized_default_n_1<true>::__uninit_default_n<Node*, unsigned long>(Node*, unsigned long) [76] long long* std::fill_n<long long*, unsigned long, long long>(long long*, unsigned long, long long const&)
+  [16] std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data::_M_copy_data(std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data const&) [63] long long* std::__uninitialized_default_n_1<true>::__uninit_default_n<long long*, unsigned long>(long long*, unsigned long) [77] SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}& std::forward<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&>(std::remove_reference<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&>::type&)
+  [52] std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data::_M_swap_data(std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data&) [119] std::vector<Node, std::allocator<Node> >::_S_max_size(std::allocator<Node> const&) [43] SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}&& std::forward<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>(std::remove_reference<SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}>::type&)
+  [22] std::_Vector_base<Node, std::allocator<Node> >::_Vector_impl_data::_Vector_impl_data() [120] std::vector<Node, std::allocator<Node> >::_M_move_assign(std::vector<Node, std::allocator<Node> >&&, std::integral_constant<bool, true>) [8] long long&& std::forward<long long>(std::remove_reference<long long>::type&)
+  [17] std::_Vector_base<Node, std::allocator<Node> >::_M_get_Tp_allocator() [121] std::vector<Node, std::allocator<Node> >::_S_check_init_len(unsigned long, std::allocator<Node> const&) [44] void std::_Destroy<Node*>(Node*, Node*)
+  [97] std::_Vector_base<Node, std::allocator<Node> >::_Vector_base(unsigned long, std::allocator<Node> const&) [122] std::vector<Node, std::allocator<Node> >::_M_default_initialize(unsigned long) [45] void std::_Destroy<Node*, Node>(Node*, Node*, std::allocator<Node>&)
+  [98] std::_Vector_base<Node, std::allocator<Node> >::_Vector_base(std::allocator<Node> const&) [123] std::vector<Node, std::allocator<Node> >::vector(std::allocator<Node> const&) [31] void std::_Destroy<long long*>(long long*, long long*)
+  [99] std::_Vector_base<Node, std::allocator<Node> >::_Vector_base() [124] std::vector<Node, std::allocator<Node> >::vector(unsigned long, std::allocator<Node> const&) [32] void std::_Destroy<long long*, long long>(long long*, long long*, std::allocator<long long>&)
+  [37] std::_Vector_base<Node, std::allocator<Node> >::~_Vector_base() [125] std::vector<Node, std::allocator<Node> >::vector() [148] void std::__fill_a<Node*, Node>(Node*, Node*, Node const&)
+  [53] std::_Vector_base<long long, std::allocator<long long> >::_M_allocate(unsigned long) [40] std::vector<Node, std::allocator<Node> >::~vector() [149] void std::__fill_a<long long*, long long>(long long*, long long*, long long const&)
+ [100] std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl::_Vector_impl() [126] std::vector<Node, std::allocator<Node> >::operator=(std::vector<Node, std::allocator<Node> >&&) [150] __gnu_cxx::__enable_if<!std::__is_scalar<Node>::__value, void>::__type std::__fill_a1<Node*, Node>(Node*, Node*, Node const&)
+  [38] std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl::_Vector_impl(std::allocator<long long> const&) [12] std::vector<Node, std::allocator<Node> >::operator[](unsigned long) [151] __gnu_cxx::__enable_if<std::__is_scalar<long long>::__value, void>::__type std::__fill_a1<long long*, long long>(long long*, long long*, long long const&)
+  [26] std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl::~_Vector_impl() [64] std::vector<long long, std::allocator<long long> >::_S_max_size(std::allocator<long long> const&) [152] SegTree::SegTree(std::vector<long long, std::allocator<long long> >&)::{lambda(long long, long long, long long)#1}::operator()(long long, long long, long long) const
+  [27] std::_Vector_base<long long, std::allocator<long long> >::_M_deallocate(long long*, unsigned long) [127] std::vector<long long, std::allocator<long long> >::_M_move_assign(std::vector<long long, std::allocator<long long> >&&, std::integral_constant<bool, true>) [46] operator new(unsigned long, void*)
+  [54] std::_Vector_base<long long, std::allocator<long long> >::_M_create_storage(unsigned long) [65] std::vector<long long, std::allocator<long long> >::_S_check_init_len(unsigned long, std::allocator<long long> const&)
+  [18] std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data::_M_copy_data(std::_Vector_base<long long, std::allocator<long long> >::_Vector_impl_data const&) [66] std::vector<long long, std::allocator<long long> >::_M_default_initialize(unsigned long)

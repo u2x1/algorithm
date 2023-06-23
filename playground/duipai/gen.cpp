@@ -12,14 +12,20 @@ int arr[maxN];
 signed main() {
   std::ios::sync_with_stdio(0); std::cin.tie(0);
   
-  srand((unsigned)time(0));
-
-  const int n = 1 + rand() % (int)100;
-  const int l = rand() % 10 + 1;
-  std::cout << n; NL;
-  orep(i, 0, n) {
-    const int a = 1 + rand() % 10000;
-    std::cout << a << " " << a / (l+rand()%10); NL;
+  srand(std::chrono::steady_clock::now().time_since_epoch().count());
+  int t = 1;
+  std::cout << t; NL;
+  while(t--) {
+    // const int maxN = 20;
+    // const int m = (1+rand() % maxN);
+    const int n = (1+rand() % 10);
+    // std::cout << n << " " << m; NL;
+    std::cout << n; NL;
+    orep(i, 0, n) {
+      int l = rand() % 100;
+      int r = l + rand() % 20;
+      std::cout << l << " " << r; NL;
+    }
   }
 
   return 0;

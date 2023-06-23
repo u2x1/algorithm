@@ -26,26 +26,26 @@ signed main() {
   }
   
   int l = -1, r = 1e9+1;
-  while(l < r-1) {
+  while(l < r) {
     const int m = (l+r) >> 1;
     const int ret = check(m);
     if (ret > 0) {
-      l = m;
-    } else if (ret <= 0){
+      l = m+1;
+    } else {
       r = m;
     }
   }
   std::cout << r << " "; 
   l = -1, r = 1e9+1;
-  while(l < r-1) {
+  while(l < r) {
     const int m = (l+r) >> 1;
-    const int ret = check(m);
+    const int ret = check(m+1);
     if (ret >= 0) {
-      l = m;
-    } else if (ret < 0){
+      l = m+1;
+    } else {
       r = m;
     }
   }
   std::cout << l;
-	return 0;
+  return 0;
 }

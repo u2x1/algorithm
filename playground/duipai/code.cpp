@@ -1,54 +1,39 @@
 #include <iostream>
+#include <vector>
+#include <algorithm>
 
-#define orep(i, a, b) for(int i = (a); i < (b); ++i)
-#define NL std::cout << '\n'
-#define int long long 
-const int maxN = 2e5+5;
-int a[maxN], b[maxN];
-
-int n;
-int check(const int x) {
-  orep(i, 0, n) {
-    if (a[i]/x > b[i]) {
-      return 1;
-    } else if (a[i]/x < b[i]) {
-      return -1;
-    }
-  }
-  return 0;
-}
+#define all(x)      x.begin(), x.end()
+#define orep(i,l,r) for(auto i = (l); i < (r); ++i)
+#define NL          std::cout << '\n'
 
 signed main() {
   std::ios::sync_with_stdio(0); std::cin.tie(0);
-  std::cin >> n;
-  orep(i, 0, n) {
-    std::cin >> a[i] >> b[i];
-  }
-  
-  int l = -1, r = 1e9+1;
-  while(l < r-1) {
-    const int m = (l+r) >> 1;
-    const int ret = check(m);
-    // std::cout << "checked " << m << ": " << ret; NL;
-    if (ret > 0) {
-      l = m;
-    } else if (ret <= 0){
-      r = m;
+  int t; std::cin >> t;
+  while(t--) {
+    int n; std::cin >> n;
+    std::vector<std::pair<int, int>> segs;
+    orep(i, 0, n) {
+      int a, b; std::cin >> a >> b;
+      segs.emplace_back(a, b);
     }
-  }
-  std::cout << r << " "; 
-  l = -1, r = 1e9+1;
-  while(l < r-1) {
-    const int m = (l+r) >> 1;
-    const int ret = check(m);
-    // std::cout << "checked " << m << ": " << ret; NL;
-    if (ret >= 0) {
-      l = m;
-    } else if (ret < 0){
-      r = m;
+    std::sort(all(segs), [](auto x, auto y) { return x.second < y.second; });
+    int ret = 0;
+    std::vector<int> dp(n+1);
+    orep(i, 0, n) {
+      dp[i+1] = dp[i];
+      orep(j, 0, i) {
+        auto [l2, r2] = segs[i];
+        auto [l1, r1] = segs[j];
+        if (r1 >= l2) {
+          int pre = std::upper_bound(all(segs), std::min(l1, l2)-1, [](auto val, auto x) { return val < x.second; })- segs.begin();
+          dp[i+1] = std::max(dp[i+1], dp[pre] + 2);
+          ret = std::max(ret, dp[i+1]);
+        }
+      }
     }
+    std::cout << n-ret; NL;
   }
-  std::cout << l;
-	return 0;
+
+  return 0;
 }
 
