@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ctime>
 #include <string>
 
 #define orep(i,l,r) for(auto i = (l); i < (r); ++i)
@@ -35,14 +36,15 @@ signed main() {
 
   orep(i, 0, 5) {
     NL;
-    std::cout << "#####################################";
+    std::cout << "#######################";
     std::cout << " " << i << " ";
-    std::cout << "#####################################";
+    std::cout << "#######################";
     NL;
     runOnce();
     out();
   }
 
+  NL; NL;
   std::cout << "#####################################"; NL;
   std::cout << "#####################################"; NL;
   std::cout << "################start################"; NL;
@@ -50,20 +52,26 @@ signed main() {
   std::cout << "#####################################"; NL;
 
   long long cnt = 0;
-  std::cout << "Runing on Test #0";
+  long long avgt = 0;
+  std::cout << "Running on Test #0";
+  std::string s = "0";
   while(1) {
+    auto start = clock();
     if (runOnce()) {
       std::cout << "Runtime Error"; NL;
       out();
       return 0;
     }
+    auto end = clock();
+    avgt = (avgt*cnt + (end-start)) / (cnt+1);
     if (isWrong()) {
       std::cout << "\nWrong Answer" << cnt; NL; NL;
       out();
       return 0;
     }
-    std::cout << std::string(std::to_string(cnt).size(), '\b');
-    std::cout << ++cnt;
+    std::cout << std::string(s.size(), '\b');
+    s = std::to_string(++cnt) + " (" + std::to_string(1.0L*avgt/CLOCKS_PER_SEC*1000) + " ms)";
+    std::cout << s;
     std::cout.flush();
   }
 
