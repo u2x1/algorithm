@@ -30,11 +30,11 @@ void out() {
 
 signed main() {
   std::ios::sync_with_stdio(0); std::cin.tie(0);
-  system("g++ -O3 std.cpp -o std");
-  system("g++ -O3 code.cpp -o code");
-  system("g++ -O3 gen.cpp -o gen");
+  system("g++ std.cpp -o std");
+  system("g++ code.cpp -o code");
+  system("g++ gen.cpp -o gen");
 
-  orep(i, 0, 5) {
+  orep(i, 0, 2) {
     NL;
     std::cout << "#######################";
     std::cout << " " << i << " ";
@@ -52,7 +52,6 @@ signed main() {
   std::cout << "#####################################"; NL;
 
   long long cnt = 0;
-  long long avgt = 0;
   std::cout << "Running on Test #0";
   std::string s = "0";
   while(1) {
@@ -62,15 +61,13 @@ signed main() {
       out();
       return 0;
     }
-    auto end = clock();
-    avgt = (avgt*cnt + (end-start)) / (cnt+1);
     if (isWrong()) {
       std::cout << "\nWrong Answer" << cnt; NL; NL;
       out();
       return 0;
     }
     std::cout << std::string(s.size(), '\b');
-    s = std::to_string(++cnt) + " (" + std::to_string(1.0L*avgt/CLOCKS_PER_SEC*1000) + " ms)";
+    s = std::to_string(++cnt) + " (" + std::to_string(1.0*(clock()-start)) + " ms)";
     std::cout << s;
     std::cout.flush();
   }

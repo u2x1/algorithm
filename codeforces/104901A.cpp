@@ -13,34 +13,30 @@ signed main() {
   int t; std::cin >> t;
   while (t--) {
     std::string s; std::cin >> s;
-    bool ret = 1;
-    std::string stk;
-    std::vector<std::bitset<2>> q;
-    std::bitset<2> st(0);
+    bool ret = true;
+    std::string stk; stk.reserve(s.size());
+    std::vector<char> q;
+    char st = 0;
     for (auto c : s) {
 
       c = (c == '(' || c == ')');
 
       if (stk.size() && stk.back() == c) {
-        st &= q.back();
+        st = q.back();
 
-        if (st[c]) { ret = 0; }
+        if (st >> c & 1) { ret = 0; break; }
 
         q.pop_back();
         stk.pop_back();
 
-        if (q.size()) {
-          q.back() &= st;
-        }
-
         st |= 1 << c;
-
       } else {
         stk += c;
-
-        q.emplace_back(0b11);
+        q.emplace_back(st);
+        st = 0;
       }
     }
+
     std::cout << (ret ? "Yes" : "No"); NL;
   }
 

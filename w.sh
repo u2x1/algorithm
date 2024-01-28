@@ -28,7 +28,7 @@ function judge {
   printf "Judging...\n"
 
   if [ ! $flag -eq -120 ] ; then
-    processOut=$(timeout 1 bash -c "cat $inFile | ./zout")
+    processOut=$(timeout 3 bash -c "cat $inFile | ./zout")
     flag=$?
   fi
 
@@ -36,7 +36,7 @@ function judge {
   if [ $flag -eq 0 ]; then
     diff -q -w $outFile <(echo -e "$processOut") > /dev/null 2>&1
     if [ $? -eq 0 ]; then
-      echo -e "${GREEN}AC${NOCOLOR}"
+      echo -e "${GREEN}Pretests Passed${NOCOLOR}"
     else
       echo -e "${RED}WA${NOCOLOR}"
       printf "\n.....INPUT....\n"
@@ -81,14 +81,18 @@ function op {
 function f {
   if [ ! -f $sourceFile ]; then
   cat > $sourceFile <<EOF
-#include <bits/stdc++.h>
+#include "bits/stdc++.h"
 
-#define all(x)      x.begin(), x.end()
-#define orep(i,l,r) for(auto i = (l); i < (r); ++i)
-#define NL          std::cout << '\n'
+#define all(x)   x.begin(), x.end()
+#define NL       std::cout << '\n'
 
-signed main() {
-  std::ios::sync_with_stdio(0); std::cin.tie(0);
+using lnt = long long;
+
+const int inf = 0x3f3f3f3f;
+const lnt linf = 1ll << 62;
+
+int main() {
+  std::ios::sync_with_stdio(0), std::cin.tie(0);
 
   return 0;
 }
@@ -97,7 +101,7 @@ EOF
 
   flag=0
   vim $sourceFile
-  g++ -O2 -g -fsanitize=address -Wall -Wextra -Wshadow -o zout -Wall $sourceFile
+  g++ -fsanitize=address,undefined -g -std=c++20 -I. -include bits/stdc++.h -Wall -o zout $sourceFile
   if [ ! $? -eq 0 ] ; then
     flag=-120
   fi
