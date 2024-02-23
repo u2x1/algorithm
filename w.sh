@@ -20,6 +20,7 @@ function writeTest {
     printf '%s\n' "$input"  > $inFile
     printf '%s\n' "$output" > $outFile
     printf "\ndone.\n"
+    ln -s ~/project/algorithm/bits/ bits
   fi
 }
 
@@ -101,7 +102,7 @@ EOF
 
   flag=0
   vim $sourceFile
-  g++ -fsanitize=address,undefined -g -std=c++20 -I. -include bits/stdc++.h -Wall -o zout $sourceFile
+  g++ -Winvalid-pch -fsanitize=address,undefined -g -std=c++20 -I. -include bits/stdc++.h -Wall -o zout $sourceFile
   if [ ! $? -eq 0 ] ; then
     flag=-120
   fi
